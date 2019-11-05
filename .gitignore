@@ -7,7 +7,7 @@ public/
 .deploy*/
 public/
 
-_config.yml
+# _config.yml
 db.json
 */_config.yml
 
