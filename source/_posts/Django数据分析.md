@@ -25,7 +25,7 @@ annotate 得到 queryset （数据集合）
 aggregate 得到统计结果
 """
 import random
-from datetime import datetiem
+from datetime import datetime
 
 from faker import Faker
 from django.db.models import Count, Avg, Sum, Max, Min
