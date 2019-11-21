@@ -14,6 +14,8 @@ say:
 deploy:
 	hexo cl -g 
 	hexo d
+d:
+	make deploy
 init:
 	rm -rf .git
 	git init

@@ -6,6 +6,7 @@ date:       2019-07-27
 author:     TY
 header-img: img/post-bg-BJJ.jpg
 catalog: true
+categories: ['编程', 'python', 'web']
 tags:
     - Django
     - RESTful api

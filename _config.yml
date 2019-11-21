@@ -103,6 +103,28 @@ search:
   content: true
   format: html
 
+# emojis
+## hexo-filter-github-emojis
+githubEmojis:
+  enable: true
+  className: github-emojis
+  inject: true
+  styles:
+  customEmojis:
+
+# rss
+rss:
+  type: atom
+  path: atom.xml
+  limit:
+  hub:
+  content:
+  content_limit:
+  content_limit_delim:
+  order_by: -date
+  autodiscovery: true
+
+  
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
