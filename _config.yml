@@ -112,6 +112,10 @@ githubEmojis:
   styles:
   customEmojis:
 
+# flowchart
+flowchart: 
+  options:
+
 # rss
 rss:
   type: atom
