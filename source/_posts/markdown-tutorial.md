@@ -1,6 +1,7 @@
 ---
 title: markdown 教程
 date: 2019-11-03 21:32:42
+categories: tools
 tags: [markdown, emacs, "org mode"]
 ---
 

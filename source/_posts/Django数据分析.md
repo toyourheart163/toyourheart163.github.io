@@ -1,12 +1,8 @@
 ---
 title: Django 数据分析
 date: 2019-11-21 02:04:09
-tags: [django, rest_framework, api]
-categories: 
-    - 编程
-    - python
-    - 统计
-    - 数据分析
+tags: [django, rest_framework, api, python]
+categories: python
 ---
 
 # django 统计功能
@@ -41,7 +37,7 @@ def faker_price():
     return round(random.random()*1000 * random.random() * random.random(), 2)
 
 for i in range(9999):
-    created_at=faker.date_time_ad(start_datetime=d(2017, 1, 1))
+    created_at=faker.date_time_ad(start_datetime=datetime(2017, 1, 1))
     Trade.objects.create(name=random.choice(names), price=faker_price(), created_at=created_at)
 
 def trade_list(request):

@@ -1,7 +1,8 @@
 ---
 title: 博客添加flowchart.js流程图功能
 date: 2019-12-03 02:02:29
-tags: [flowchart, 流程图]
+categories: tools
+tags: [flowchart, 流程图, hexo]
 ---
 
 ## 添加流程图功能

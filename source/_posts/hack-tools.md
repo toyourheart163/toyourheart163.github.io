@@ -1,13 +1,8 @@
 ---
-layout:     post
-title:      黑客工具
-subtitle:   黑客工具
-date:       2019-11-01
-author:     TY
-header-img: img/
-catalog: true
-toc: true
+title: 黑客工具
+date: 2019-11-01
 tags: [netcat, nmap, termux, tmux]
+categories: tools
 ---
 
 # 黑客工具
@@ -55,10 +50,10 @@ tags: [netcat, nmap, termux, tmux]
 ## tmux 终端复用器
 
 1. ssh连接，持久session，万一网络断开了，重新连接后的东西不见了，就用到tmux
-    ```zsh
-    tmux ls # 列出使用的session
-    tmux attach -t 0  # 切换到第0个
-    ```
+```zsh
+tmux ls # 列出使用的session
+tmux attach -t 0  # 切换到第0个
+```
 
 3. 窗格快捷键
 

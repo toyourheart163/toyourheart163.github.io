@@ -2,7 +2,8 @@ say:
 	echo hello
 	
 d:
-	hexo cl -g 
+	hexo cl 
+	hexo g
 	hexo d
 
 init:

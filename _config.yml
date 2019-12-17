@@ -5,8 +5,8 @@
 # Site
 title: 麦可乐的博客
 subtitle: 'Stay hungry, stay foolish.'
-description: '反脆弱'
-keywords: [python, vue, docker]
+description: 提升思维能力 普及常识 谈点技术
+keywords: [python, vue, docker, django pandas]
 author: toyourheart163
 language: zh-CN
 timezone: 'Asia/Shanghai'

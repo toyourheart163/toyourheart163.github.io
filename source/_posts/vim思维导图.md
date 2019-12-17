@@ -1,6 +1,7 @@
 ---
 title: vim思维导图
 date: 2019-12-02 19:45:17
+categories: tools
 tags: [vim, 编辑器]
 ---
 

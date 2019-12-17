@@ -1,16 +1,13 @@
 ---
-layout:     post
 title:      Django CRM 客户关系管理
 subtitle:   rest_framework api
 date:       2019-09-04
-author:     TY
-header-img: img/post-bg-BJJ.jpg
-catalog: true
-categories: ['编程', 'python', 'web']
+categories: python
 tags:
     - Django
     - CRM
     - kingadmin
+    - python
 ---
 
 # 一个CRM关系管理系统

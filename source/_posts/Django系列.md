@@ -3,14 +3,12 @@ layout:     post
 title:      Django 系列一
 subtitle:   rest_framework api
 date:       2019-07-27
-author:     TY
-header-img: img/post-bg-BJJ.jpg
-catalog: true
-categories: ['编程', 'python', 'web']
+categories: python
 tags:
     - Django
     - RESTful api
     - rest_framework
+    - python
 ---
 
 ## 生成 restful api
