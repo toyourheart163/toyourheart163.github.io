@@ -10,6 +10,7 @@ public/
 # _config.yml
 db.json
 */_config.yml
+themes/next/_config.yml
 
 yarn.lock
 package-lock.json
