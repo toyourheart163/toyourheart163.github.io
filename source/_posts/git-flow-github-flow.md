@@ -16,13 +16,12 @@ tags: git
 
 ### ignore 忽略文件
 
-<details id="markdown"><summary>展开/关闭</summary>
 |模式|示例|
 |---|---|
-|完整路径|db.sqlite3|
+|完整路径|db.sqlite3| 
 |/path|只匹配当前这个文件 /config.py|
 |path|当前目录与递归目录的文件 *.pyc|
-|path/|只匹配目录及其文件|
+|path/|只匹配目录及其文件| 
 |带*|所有满足的条件 *.zip|
 |带**|满足前后路径 Dev/**/dev.conf|
 |!path|不忽略|
