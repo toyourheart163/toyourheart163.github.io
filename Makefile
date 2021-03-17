@@ -6,6 +6,9 @@ d:
 	hexo g
 	hexo d
 
+deploy: d
+	hexo d
+
 init:
 	rm -rf .git
 	git init
