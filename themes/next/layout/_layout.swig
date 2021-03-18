@@ -23,7 +23,7 @@
       <div class="main-inner">
         <div class="content-wrap">
           {% include '_partials/header/sub-menu.swig' %}
-          <div class="content">
+          <div class="content {% block class %}{% endblock %}">
             {% block content %}{% endblock %}
           </div>
           {% include '_partials/comments.swig' %}
@@ -36,9 +36,9 @@
 
     <footer class="footer">
       <div class="footer-inner">
+        {% include '_partials/languages.swig' %}
         {{ partial('_partials/footer.swig', {}, {cache: theme.cache.enable}) }}
         {{ partial('_third-party/statistics/index.swig', {}, {cache: theme.cache.enable}) }}
-        {% block footer %}{% endblock %}
       </div>
     </footer>
   </div>
@@ -49,25 +49,12 @@
   {%- if theme.pjax %}
     <div id="pjax">
   {%- endif %}
-
   {% include '_third-party/math/index.swig' %}
   {% include '_third-party/quicklink.swig' %}
 
   {{- next_inject('bodyEnd') }}
-
   {%- if theme.pjax %}
     </div>
   {%- endif %}
-
-  <!-- 页面点击小红心 -->
-  {% if theme.clicklove %}
-    <script src="/js/src/clicklove.js"></script>
-  {% endif %}
-  {% if theme.fireworks %}
-   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
-   <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
-   <script type="text/javascript" src="/js/src/fireworks.js"></script>
-  {% endif %}
-
 </body>
 </html>
