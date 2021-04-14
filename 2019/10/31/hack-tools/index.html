@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"toyourheart163.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
+  </script>
+
+  <meta name="description" content="黑客工具 netcat nmap termux tmux  netcat 网猫–网络上的瑞士军刀1234567891011121314---------------------|      &#x2F;\_&#x2F;\        ||     &#x2F; 0 0 \       ||    &#x3D;&#x3D;&#x3D;&#x3D;v&#x3D;&#x3D;&#x3D;&#x3D;      ||     \  W  &#x2F;       ||     |     |     _ ||     &#x2F;">
+<meta property="og:type" content="article">
+<meta property="og:title" content="黑客工具">
+<meta property="og:url" content="https://toyourheart163.github.io/2019/10/31/hack-tools/index.html">
+<meta property="og:site_name" content="麦可乐的博客">
+<meta property="og:description" content="黑客工具 netcat nmap termux tmux  netcat 网猫–网络上的瑞士军刀1234567891011121314---------------------|      &#x2F;\_&#x2F;\        ||     &#x2F; 0 0 \       ||    &#x3D;&#x3D;&#x3D;&#x3D;v&#x3D;&#x3D;&#x3D;&#x3D;      ||     \  W  &#x2F;       ||     |     |     _ ||     &#x2F;">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2019-10-31T16:00:00.000Z">
+<meta property="article:modified_time" content="2021-03-12T10:36:26.170Z">
+<meta property="article:author" content="toyourheart163">
+<meta property="article:tag" content="netcat">
+<meta property="article:tag" content="nmap">
+<meta property="article:tag" content="termux">
+<meta property="article:tag" content="tmux">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://toyourheart163.github.io/2019/10/31/hack-tools/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>黑客工具 | 麦可乐的博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="麦可乐的博客" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">麦可乐的博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Stay hungry, stay foolish.</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">59</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">5</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">34</span></a>
+
+  </li>
+        <li class="menu-item menu-item-friends">
+
+    <a href="/friends/" rel="section"><i class="fas fa-address-book fa-fw"></i>friends</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+  <a href="https://github.com/toyourheart163" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://toyourheart163.github.io/2019/10/31/hack-tools/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="toyourheart163">
+      <meta itemprop="description" content="提升思维能力 普及常识 谈点技术">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="麦可乐的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          黑客工具
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-11-01 00:00:00" itemprop="dateCreated datePublished" datetime="2019-11-01T00:00:00+08:00">2019-11-01</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-12 18:36:26" itemprop="dateModified" datetime="2021-03-12T18:36:26+08:00">2021-03-12</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tools/" itemprop="url" rel="index"><span itemprop="name">tools</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h1 id="黑客工具"><a href="#黑客工具" class="headerlink" title="黑客工具"></a>黑客工具</h1><ul>
+<li>netcat</li>
+<li>nmap</li>
+<li>termux</li>
+<li>tmux</li>
+</ul>
+<h2 id="netcat-网猫–网络上的瑞士军刀"><a href="#netcat-网猫–网络上的瑞士军刀" class="headerlink" title="netcat 网猫–网络上的瑞士军刀"></a>netcat 网猫–网络上的瑞士军刀</h2><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">---------------------</span><br><span class="line">|      /\_/\        |</span><br><span class="line">|     / 0 0 \       |</span><br><span class="line">|    ====v====      |</span><br><span class="line">|     \  W  /       |</span><br><span class="line">|     |     |     _ |</span><br><span class="line">|     / ___ \    /  |</span><br><span class="line">|    / /   \ \  |   |</span><br><span class="line">|   (((-----)))-'   |</span><br><span class="line">|    /              |</span><br><span class="line">|   (      ___      |</span><br><span class="line">|    \__.=|___E     |</span><br><span class="line">|           /       |</span><br><span class="line">---------------------</span><br></pre></td></tr></tbody></table></figure>
+
+<ol>
+<li>传文件</li>
+</ol>
+<ul>
+<li>接收主机 <code>nc -l -p 6666 &gt; file</code></li>
+<li>发送主机 <code>nc localhost 6666 &lt; file</code></li>
+</ul>
+<ol start="2">
+<li>扫描端口 <code>nc -znv 192.168.0.100 1-1024</code></li>
+</ol>
+<h2 id="nmap-扫描端口"><a href="#nmap-扫描端口" class="headerlink" title="nmap 扫描端口"></a>nmap 扫描端口</h2><p><code>nmap www.baidu.com</code></p>
+<h2 id="termux-android-terminal"><a href="#termux-android-terminal" class="headerlink" title="termux, android terminal"></a>termux, android terminal</h2><p>从F-Droid应用商店安装<br>使用方法，搜索<strong><a target="_blank" rel="noopener" href="https://www.sqlsec.com/2018/05/termux.html">国光termux</a></strong>，可以了解到白帽子黑客使用的工具</p>
+<h2 id="tmux-终端复用器"><a href="#tmux-终端复用器" class="headerlink" title="tmux 终端复用器"></a>tmux 终端复用器</h2><ol>
+<li><p>ssh连接，持久session，万一网络断开了，重新连接后的东西不见了，就用到tmux</p>
+<figure class="highlight zsh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">tmux ls <span class="comment"># 列出使用的session</span></span><br><span class="line">tmux attach -t 0  <span class="comment"># 切换到第0个</span></span><br></pre></td></tr></tbody></table></figure>
+</li>
+<li><p>窗格快捷键</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">Ctrl+b %：划分左右两个窗格。</span><br><span class="line">Ctrl+b "：划分上下两个窗格。</span><br><span class="line">Ctrl+b &lt;arrow key&gt;：光标切换到其他窗格。&lt;arrow key&gt;是指向要切换到的窗格的方向键，比如切换到下方窗格，就按方向键↓。</span><br><span class="line">Ctrl+b ;：光标切换到上一个窗格。</span><br><span class="line">Ctrl+b o：光标切换到下一个窗格。</span><br><span class="line">Ctrl+b {：当前窗格左移。</span><br><span class="line">Ctrl+b }：当前窗格右移。</span><br><span class="line">Ctrl+b Ctrl+o：当前窗格上移。</span><br><span class="line">Ctrl+b Alt+o：当前窗格下移。</span><br><span class="line">Ctrl+b x：关闭当前窗格。</span><br><span class="line">Ctrl+b !：将当前窗格拆分为一个独立窗口。</span><br><span class="line">Ctrl+b z：当前窗格全屏显示，再使用一次会变回原来大小。</span><br><span class="line">Ctrl+b Ctrl+&lt;arrow key&gt;：按箭头方向调整窗格大小。</span><br><span class="line">Ctrl+b q：显示窗格编号。</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="查找文件fd-替代find"><a href="#查找文件fd-替代find" class="headerlink" title="查找文件fd, 替代find"></a>查找文件fd, 替代find</h2><p>###　安装<code>brew install fd</code></p>
+<p><a target="_blank" rel="noopener" href="https://github.com/sharkdp/fd">fd 官网</a></p>
+<figure class="highlight zsh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">fd .  <span class="comment"># 递归查找</span></span><br><span class="line">fd -e py <span class="comment"># 查找py结尾的文件</span></span><br></pre></td></tr></tbody></table></figure>
+
+
+<h2 id="查找文件里的字符-grep"><a href="#查找文件里的字符-grep" class="headerlink" title="查找文件里的字符 grep"></a>查找文件里的字符 <code>grep</code></h2><figure class="highlight zsh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">grep -r <span class="string">"word"</span> .</span><br><span class="line"><span class="comment"># exclude 除了此文件夹，include 是此文件夹</span></span><br><span class="line">grep -R --exclude-dir={node_modules,} <span class="string">"mock"</span> .</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="从github下载单个文件夹或文件fetcher"><a href="#从github下载单个文件夹或文件fetcher" class="headerlink" title="从github下载单个文件夹或文件fetcher"></a>从github下载单个文件夹或文件<code>fetcher</code></h2><p>安装 <code>npm install -g github-files-fetcher</code></p>
+<p>获取文件 <code>fetcher --url="https://github.com/toyourheart163/toyourheart163.github.io/blob/master/_posts/2019-11-01-hack-tools.md --out=hack-tool.md"</code></p>
+<h2 id="Autojump"><a href="#Autojump" class="headerlink" title="Autojump"></a>Autojump</h2><p>不用<code>cd</code>半天</p>
+<p>跳到download文件夹<code>j down</code></p>
+<h2 id="输入法rime"><a href="#输入法rime" class="headerlink" title="输入法rime"></a>输入法rime</h2><p><a target="_blank" rel="noopener" href="https://rime.im">rime</a></p>
+<p>可以用emacs的快捷键，当然在windows上快捷键就不怎么好用了。不要在win上开发软件，配置太累了。</p>
+<script>
+        document.querySelectorAll('.github-emojis')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+    </div>
+
+    
+    
+    
+        
+
+  <div class="followme">
+    <p>欢迎关注我的其它发布渠道</p>
+
+    <div class="social-list">
+
+        <div class="social-item">
+          <a target="_blank" class="social-link" href="/atom.xml">
+            <span class="icon">
+              <i class="fa fa-rss"></i>
+            </span>
+
+            <span class="label">RSS</span>
+          </a>
+        </div>
+    </div>
+  </div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/netcat/" rel="tag"><i class="fa fa-tag"></i> netcat</a>
+              <a href="/tags/nmap/" rel="tag"><i class="fa fa-tag"></i> nmap</a>
+              <a href="/tags/termux/" rel="tag"><i class="fa fa-tag"></i> termux</a>
+              <a href="/tags/tmux/" rel="tag"><i class="fa fa-tag"></i> tmux</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2019/09/03/CRM%E5%AE%A2%E6%88%B7%E7%AE%A1%E7%90%86/" rel="prev" title="Django CRM 客户关系管理">
+      <i class="fa fa-chevron-left"></i> Django CRM 客户关系管理
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2019/11/01/github-pages-with-gitalk/" rel="next" title="Add Gitalk to github pages">
+      Add Gitalk to github pages <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="gitalk-container"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%BB%91%E5%AE%A2%E5%B7%A5%E5%85%B7"><span class="nav-number">1.</span> <span class="nav-text">黑客工具</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#netcat-%E7%BD%91%E7%8C%AB%E2%80%93%E7%BD%91%E7%BB%9C%E4%B8%8A%E7%9A%84%E7%91%9E%E5%A3%AB%E5%86%9B%E5%88%80"><span class="nav-number">1.1.</span> <span class="nav-text">netcat 网猫–网络上的瑞士军刀</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#nmap-%E6%89%AB%E6%8F%8F%E7%AB%AF%E5%8F%A3"><span class="nav-number">1.2.</span> <span class="nav-text">nmap 扫描端口</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#termux-android-terminal"><span class="nav-number">1.3.</span> <span class="nav-text">termux, android terminal</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#tmux-%E7%BB%88%E7%AB%AF%E5%A4%8D%E7%94%A8%E5%99%A8"><span class="nav-number">1.4.</span> <span class="nav-text">tmux 终端复用器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%A5%E6%89%BE%E6%96%87%E4%BB%B6fd-%E6%9B%BF%E4%BB%A3find"><span class="nav-number">1.5.</span> <span class="nav-text">查找文件fd, 替代find</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%9F%A5%E6%89%BE%E6%96%87%E4%BB%B6%E9%87%8C%E7%9A%84%E5%AD%97%E7%AC%A6-grep"><span class="nav-number">1.6.</span> <span class="nav-text">查找文件里的字符 grep</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BB%8Egithub%E4%B8%8B%E8%BD%BD%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E5%A4%B9%E6%88%96%E6%96%87%E4%BB%B6fetcher"><span class="nav-number">1.7.</span> <span class="nav-text">从github下载单个文件夹或文件fetcher</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Autojump"><span class="nav-number">1.8.</span> <span class="nav-text">Autojump</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%BE%93%E5%85%A5%E6%B3%95rime"><span class="nav-number">1.9.</span> <span class="nav-text">输入法rime</span></a></li></ol></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">toyourheart163</p>
+  <div class="site-description" itemprop="description">提升思维能力 普及常识 谈点技术</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">34</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">59</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/toyourheart163" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;toyourheart163" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://github.com/toyourheart163" title="https:&#x2F;&#x2F;github.com&#x2F;toyourheart163" rel="noopener" target="_blank">repos</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2019 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">toyourheart163</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var canonicalURL, curProtocol;
+      //Get the <link> tag
+      var x=document.getElementsByTagName("link");
+		//Find the last canonical URL
+		if(x.length > 0){
+			for (i=0;i<x.length;i++){
+				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+					canonicalURL=x[i].href;
+				}
+			}
+		}
+    //Get protocol
+	    if (!canonicalURL){
+	    	curProtocol = window.location.protocol.split(':')[0];
+	    }
+	    else{
+	    	curProtocol = canonicalURL.split(':')[0];
+	    }
+      //Get current URL if the canonical URL does not exist
+	    if (!canonicalURL) canonicalURL = window.location.href;
+	    //Assign script content. Replace current URL with the canonical URL
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.css">
+
+<script>
+NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
+  NexT.utils.getScript('//cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js', () => {
+    var gitalk = new Gitalk({
+      clientID    : '4bac7825516be053decf',
+      clientSecret: '6a85aa7fd96a951aa5959d4587c79afba0c6666c',
+      repo        : 'toyourheart163.github.io',
+      owner       : 'toyourheart163',
+      admin       : ['toyourheart163'],
+      id          : 'f1e69eadd3c2c5d82954a6c72095de6f',
+        language: '',
+      distractionFreeMode: true
+    });
+    gitalk.render('gitalk-container');
+  }, window.Gitalk);
+});
+</script>
+
+</body>
+</html>

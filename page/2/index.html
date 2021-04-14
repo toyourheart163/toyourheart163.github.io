@@ -1,0 +1,1632 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"toyourheart163.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
+  </script>
+
+  <meta name="description" content="提升思维能力 普及常识 谈点技术">
+<meta property="og:type" content="website">
+<meta property="og:title" content="麦可乐的博客">
+<meta property="og:url" content="https://toyourheart163.github.io/page/2/index.html">
+<meta property="og:site_name" content="麦可乐的博客">
+<meta property="og:description" content="提升思维能力 普及常识 谈点技术">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="toyourheart163">
+<meta property="article:tag" content="python">
+<meta property="article:tag" content="vue">
+<meta property="article:tag" content="docker">
+<meta property="article:tag" content="django pandas">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://toyourheart163.github.io/page/2/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>麦可乐的博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="麦可乐的博客" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">麦可乐的博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Stay hungry, stay foolish.</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">59</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">5</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">34</span></a>
+
+  </li>
+        <li class="menu-item menu-item-friends">
+
+    <a href="/friends/" rel="section"><i class="fas fa-address-book fa-fw"></i>friends</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+  <a href="https://github.com/toyourheart163" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://toyourheart163.github.io/2020/03/31/resource-discovery/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="toyourheart163">
+      <meta itemprop="description" content="提升思维能力 普及常识 谈点技术">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="麦可乐的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/03/31/resource-discovery/" class="post-title-link" itemprop="url">resource-discovery</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-31 14:44:16" itemprop="dateCreated datePublished" datetime="2020-03-31T14:44:16+08:00">2020-03-31</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-12 18:36:26" itemprop="dateModified" datetime="2021-03-12T18:36:26+08:00">2021-03-12</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="网络资源表格"><a href="#网络资源表格" class="headerlink" title="网络资源表格"></a>网络资源表格</h1><h2 id="网站内容的指标"><a href="#网站内容的指标" class="headerlink" title="网站内容的指标"></a>网站内容的指标</h2><p>【对你的价值】到底有多大，还可以评估你挖掘其中的内容需要耗费多少时间和精力。</p>
+<h3 id="内容的信噪比"><a href="#内容的信噪比" class="headerlink" title="内容的信噪比"></a>内容的信噪比</h3><p>　　任何一个网站的内容，都会有一些信息是无用的，咱们称之为“噪声”。所谓的【信噪比】，就是是“有用信息”与“垃圾噪声”的比率。显然，信噪比越大越好。<br>　　提醒一下：信噪比的评价是主观的。因为每个人的关注点（价值取向）不同，所以同样的内容，对不同的人，会有不同的信噪比。</p>
+<h3 id="内容的可搜索性"><a href="#内容的可搜索性" class="headerlink" title="内容的可搜索性"></a>内容的可搜索性</h3><p>　　主要指网站的内容是否容易被搜索引擎检索和收录。<br>　　这个指标是客观的。</p>
+<h3 id="内容的生命周期"><a href="#内容的生命周期" class="headerlink" title="内容的生命周期"></a>内容的生命周期</h3><p>　　主要指网站内容的生命周期的长短。关于信息的生命周期，稍微解释一下：对于某个信息而言，只有在它的生命周期之内，该信息才有价值；过了生命周期，就没有价值。<br>　　举例：<br>　　比如美国大选之前，某人制作了一个分析报告，分析竞选双方的得票率。那么，当大选结果揭晓之后，这个报告的生命周期就结束了。<br>　　这个指标是半主观半客观的。<br>　　关注那些生命周期较长的内容。因为在网上冲浪是需要消耗时间和精力的。如果你关注的都是生命周期很短的信息，从“投资回报率”的角度来看，是不合算滴！</p>
+<h3 id="内容的组织性"><a href="#内容的组织性" class="headerlink" title="内容的组织性"></a>内容的组织性</h3><p>　　指的是网站的不同内容之间，是否具有较好的分类，是否具有较好的层次，是否具有较好的关联。<br>　　这个指标是客观的。<br>　　组织性越好，你就越容易找到该网站的其它感兴趣的内容。</p>
+<h2 id="媒介"><a href="#媒介" class="headerlink" title="媒介"></a>媒介</h2><p>视频 &lt; 图片 &lt; 文字</p>
+<h2 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h2><table>
+<thead>
+<tr>
+<th>分类</th>
+<th align="left">搜索性</th>
+<th align="left">组织性</th>
+<th align="left">生命周期</th>
+<th align="left">信噪比</th>
+<th align="left">使用建议</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>★Web 1.0</td>
+<td align="left">搜索引擎友好</td>
+<td align="left">比较好</td>
+<td align="left">专业的长，新闻短</td>
+<td align="left">新闻类差，专业类，看情况</td>
+<td align="left">好的可收藏或RSS订阅</td>
+</tr>
+<tr>
+<td>BBS</td>
+<td align="left">大部分可搜索</td>
+<td align="left">中上</td>
+<td align="left">哲学长，八卦短</td>
+<td align="left">精华区好点</td>
+<td align="left">质量好原创的发帐号人可浏览</td>
+</tr>
+<tr>
+<td>Blog</td>
+<td align="left">友好</td>
+<td align="left">组织好</td>
+<td align="left">看情况</td>
+<td align="left">好于论坛、SNS、微博</td>
+<td align="left">好的就订阅吧</td>
+</tr>
+<tr>
+<td>weibo</td>
+<td align="left">文字的可搜索</td>
+<td align="left">时间轴，碎片化</td>
+<td align="left">短</td>
+<td align="left">信噪比差</td>
+<td align="left">少用</td>
+</tr>
+<tr>
+<td>SNS</td>
+<td align="left">大部分不可搜索</td>
+<td align="left">碎片，中下</td>
+<td align="left">比微博长</td>
+<td align="left">信噪不如博客，好于微博</td>
+<td align="left">除非联系客户，少用</td>
+</tr>
+<tr>
+<td>百科</td>
+<td align="left">友好</td>
+<td align="left">好</td>
+<td align="left">长</td>
+<td align="left">信噪比好</td>
+<td align="left">搜索英文版的</td>
+</tr>
+<tr>
+<td>文件分享</td>
+<td align="left">标题可搜索</td>
+<td align="left">中等</td>
+<td align="left">较长</td>
+<td align="left">有好有差</td>
+<td align="left">用来找电子书</td>
+</tr>
+<tr>
+<td>问答类</td>
+<td align="left">友好</td>
+<td align="left">长</td>
+<td align="left">较好</td>
+<td align="left">比论坛好</td>
+<td align="left">没帮助的，直接关掉；有帮助，看完关掉</td>
+</tr>
+</tbody></table>
+<script>
+        document.querySelectorAll('.github-emojis')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://toyourheart163.github.io/2020/03/04/docker-slim-Use/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="toyourheart163">
+      <meta itemprop="description" content="提升思维能力 普及常识 谈点技术">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="麦可乐的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/03/04/docker-slim-Use/" class="post-title-link" itemprop="url">Make docker image smeller than 30X</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-03-04 20:41:03" itemprop="dateCreated datePublished" datetime="2020-03-04T20:41:03+08:00">2020-03-04</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-12 18:36:26" itemprop="dateModified" datetime="2021-03-12T18:36:26+08:00">2021-03-12</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <blockquote>
+<p>Docker image is very big. Use docker-slim make is 30X smeller.</p>
+</blockquote>
+<h2 id="install-docker-slim"><a href="#install-docker-slim" class="headerlink" title="install docker-slim"></a>install docker-slim</h2><h3 id="download"><a href="#download" class="headerlink" title="download"></a>download</h3><p><a target="_blank" rel="noopener" href="https://github.com/docker-slim/docker-slim">docker-slim</a></p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">unzip dist_mac.zip</span><br><span class="line">chmod +rx dist_mac/docker-slim*</span><br><span class="line">mv dist_mac/docker-slim /usr/<span class="built_in">local</span>/bin/</span><br><span class="line">mkdir /tmp/docker-slim-state</span><br><span class="line">cp dist_mac/docker-slim-sensor /tmp/docker-slim-state/</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="Use"><a href="#Use" class="headerlink" title="Use"></a>Use</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">docker pull python</span><br><span class="line">docker-slim build --http-probe=<span class="literal">false</span> python</span><br></pre></td></tr></tbody></table></figure>
+
+<blockquote>
+<p>(Before: 689MB =&gt; After: 17MB) It’s smeller 40X.</p>
+</blockquote>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ docker images | grep -n <span class="string">"python"</span></span><br><span class="line">3:python.slim                latest              9d74b2d5f44f        6 hours ago         17MB</span><br><span class="line">9:python                     3.6                 07d72c0beb99        23 months ago       689MB</span><br></pre></td></tr></tbody></table></figure>
+<script>
+        document.querySelectorAll('.github-emojis')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://toyourheart163.github.io/2020/02/22/share-python-app-to-pypi/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="toyourheart163">
+      <meta itemprop="description" content="提升思维能力 普及常识 谈点技术">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="麦可乐的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/02/22/share-python-app-to-pypi/" class="post-title-link" itemprop="url">share python app to pypi</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-02-22 13:20:13" itemprop="dateCreated datePublished" datetime="2020-02-22T13:20:13+08:00">2020-02-22</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-12 18:36:26" itemprop="dateModified" datetime="2021-03-12T18:36:26+08:00">2021-03-12</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="分发安装包到pypi"><a href="#分发安装包到pypi" class="headerlink" title="分发安装包到pypi"></a>分发安装包到pypi</h1><ol>
+<li><p>注册<a target="_blank" rel="noopener" href="https://pypi.org/account/register">Pypi</a>  <a target="_blank" rel="noopener" href="https://pypi.org/account/register">https://pypi.org/account/register</a></p>
+</li>
+<li><p>验证邮箱</p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="https://pypi.org/manage/account/token/">生成token</a></p>
+</li>
+<li><p>复制token到~/.pypirc文件大概像下面那样</p>
+<p> [pypi]<br>   username = <code>__token__</code><br>   password = <code>your_token</code></p>
+</li>
+<li><p><code>pip search $thiscn</code> 看看有没有和你的python包同名</p>
+</li>
+</ol>
+<h2 id="安装包的文件"><a href="#安装包的文件" class="headerlink" title="安装包的文件"></a>安装包的文件</h2><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">├── .gitignore</span><br><span class="line">├── LICENSE</span><br><span class="line">├── README.md</span><br><span class="line">├── setup.py</span><br><span class="line">├── thiscn</span><br><span class="line">│&nbsp;&nbsp; └── __init__.py</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="setup-py"><a href="#setup-py" class="headerlink" title="setup.py"></a>setup.py</h3><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> setuptools</span><br><span class="line"></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">"README.md"</span>, <span class="string">"r"</span>) <span class="keyword">as</span> fh:</span><br><span class="line">    long_description = fh.read()</span><br><span class="line"></span><br><span class="line">setuptools.setup(</span><br><span class="line">    name=<span class="string">"thiscn"</span>, <span class="comment"># Replace with your own username</span></span><br><span class="line">    version=<span class="string">"0.0.2"</span>,</span><br><span class="line">    author=<span class="string">"Mikele"</span>,</span><br><span class="line">    author_email=<span class="string">"blive200@gmail.com"</span>,</span><br><span class="line">    description=<span class="string">"The zen of Python, English and Chinese."</span>,</span><br><span class="line">    long_description=long_description,</span><br><span class="line">    long_description_content_type=<span class="string">"text/markdown"</span>,</span><br><span class="line">    url=<span class="string">"https://github.com/toyourheart163/thiscn"</span>,</span><br><span class="line">    packages=setuptools.find_packages(),</span><br><span class="line">    classifiers=[</span><br><span class="line">        <span class="string">"Programming Language :: Python :: 3"</span>,</span><br><span class="line">        <span class="string">"License :: OSI Approved :: MIT License"</span>,</span><br><span class="line">        <span class="string">"Operating System :: OS Independent"</span>,</span><br><span class="line">    ],</span><br><span class="line">    python_requires=<span class="string">'&gt;=3.6'</span>,</span><br><span class="line">)</span><br></pre></td></tr></tbody></table></figure>
+
+<blockquote>
+<p>setup.py需要修改的内容有: name, version, author, email, description, url</p>
+</blockquote>
+<h3 id="LICENSE和-gitignore可以在github生成项目时生成"><a href="#LICENSE和-gitignore可以在github生成项目时生成" class="headerlink" title="LICENSE和.gitignore可以在github生成项目时生成"></a>LICENSE和.gitignore可以在github生成项目时生成</h3><p>.gitignore 选择 python<br>LICENSE 可以选择MIT</p>
+<h3 id="thiscn-init-py"><a href="#thiscn-init-py" class="headerlink" title="thiscn/__init__.py"></a><code>thiscn/__init__.py</code></h3><p>简单的项目可以直接在<code>__init__.py</code>写源代码</p>
+<h2 id="安装twine"><a href="#安装twine" class="headerlink" title="安装twine"></a>安装twine</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install twine</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="生成package压缩包"><a href="#生成package压缩包" class="headerlink" title="生成package压缩包"></a>生成package压缩包</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python setup.py sdist</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="分享到Pypi"><a href="#分享到Pypi" class="headerlink" title="分享到Pypi"></a>分享到Pypi</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">twine upload dist/*</span><br></pre></td></tr></tbody></table></figure>
+<script>
+        document.querySelectorAll('.github-emojis')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://toyourheart163.github.io/2020/02/18/shell-scripts/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="toyourheart163">
+      <meta itemprop="description" content="提升思维能力 普及常识 谈点技术">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="麦可乐的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/02/18/shell-scripts/" class="post-title-link" itemprop="url">shell-scripts</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-02-18 19:13:54" itemprop="dateCreated datePublished" datetime="2020-02-18T19:13:54+08:00">2020-02-18</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-12 18:36:26" itemprop="dateModified" datetime="2021-03-12T18:36:26+08:00">2021-03-12</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="鸟哥的linux私房菜，学习"><a href="#鸟哥的linux私房菜，学习" class="headerlink" title="鸟哥的linux私房菜，学习"></a>鸟哥的linux私房菜，学习</h2><h2 id="shell-script-learning"><a href="#shell-script-learning" class="headerlink" title="shell script learning"></a>shell script learning</h2><blockquote>
+<p>Tips: shell 不要用于大数据计算，效率低</p>
+</blockquote>
+<h3 id="易错点"><a href="#易错点" class="headerlink" title="易错点"></a>易错点</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 数值运算:简单的加减乘除</span></span><br><span class="line">total=$((<span class="number">3</span>*<span class="number">6</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment"># 判断</span></span><br><span class="line"><span class="comment"># 2个 = 号时，用`bash script.sh`（因为`sh script.sh`无法识别）</span></span><br><span class="line"><span class="comment"># `sh script.sh`只能用一个 = 号 </span></span><br><span class="line">[ <span class="string">"<span class="variable">$HOME</span>"</span> == <span class="string">"<span class="variable">$MAIL</span>"</span> ]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 注释要另写一行，不要写在表达式后面</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="if-结束语反过来fi"><a href="#if-结束语反过来fi" class="headerlink" title="if 结束语反过来fi"></a>if 结束语反过来fi</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">read</span> -p <span class="string">"input Y/N: "</span> yn</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> [ <span class="string">"<span class="variable">$yn</span>"</span> == <span class="string">"y"</span> -o <span class="string">"<span class="variable">$yn</span>"</span> == <span class="string">"Y"</span> ]; <span class="keyword">then</span></span><br><span class="line">	<span class="built_in">echo</span> <span class="string">"yes"</span></span><br><span class="line"><span class="keyword">elif</span> [ <span class="string">"<span class="variable">$yn</span>"</span> == <span class="string">"n"</span> -o <span class="string">"<span class="variable">$yn</span>"</span> == <span class="string">"N"</span> ]; <span class="keyword">then</span></span><br><span class="line">	<span class="built_in">echo</span> <span class="string">"no"</span></span><br><span class="line"><span class="keyword">else</span></span><br><span class="line">	<span class="built_in">echo</span> <span class="string">"else"</span></span><br><span class="line"><span class="keyword">fi</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="case-结束语倒装esac"><a href="#case-结束语倒装esac" class="headerlink" title="case 结束语倒装esac"></a>case 结束语倒装esac</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">case</span> <span class="string">"<span class="variable">$1</span>"</span> <span class="keyword">in</span></span><br><span class="line">	<span class="string">"hello"</span>)</span><br><span class="line">		<span class="built_in">echo</span> <span class="string">"hello"</span></span><br><span class="line">		;;</span><br><span class="line">	<span class="string">""</span>)</span><br><span class="line">		<span class="built_in">echo</span> <span class="string">"nothing"</span></span><br><span class="line">		;;</span><br><span class="line">	*)</span><br><span class="line">		<span class="built_in">echo</span> <span class="string">"else"</span></span><br><span class="line">		;;</span><br><span class="line"><span class="keyword">esac</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="循环"><a href="#循环" class="headerlink" title="循环"></a>循环</h3><h4 id="while"><a href="#while" class="headerlink" title="while"></a>while</h4><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">s=0</span><br><span class="line">i=0</span><br><span class="line"><span class="keyword">while</span> [ <span class="string">"<span class="variable">$i</span>"</span> != <span class="string">"100"</span> ]</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">	i=$((<span class="variable">$i</span>+<span class="number">1</span>))</span><br><span class="line">	s=$((<span class="variable">$s</span>+<span class="variable">$i</span>))</span><br><span class="line"><span class="keyword">done</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"sum 1...100 is ===&gt; <span class="variable">$s</span>"</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="until"><a href="#until" class="headerlink" title="until"></a>until</h4><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">until [ <span class="string">"<span class="variable">$yn</span>"</span> == <span class="string">"yes"</span> -o <span class="string">"<span class="variable">$yn</span>"</span> == <span class="string">"YES"</span> ]</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">	<span class="built_in">read</span> -p <span class="string">"Please input yes/YES to stop this program: "</span> yn</span><br><span class="line"><span class="keyword">done</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"OK! you input the correct answer."</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="for"><a href="#for" class="headerlink" title="for"></a>for</h4><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> animal <span class="keyword">in</span> dog cat elephant</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">	<span class="built_in">echo</span> <span class="variable">$animal</span></span><br><span class="line"><span class="keyword">done</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="for-two"><a href="#for-two" class="headerlink" title="for two"></a>for two</h4><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">read</span> -p <span class="string">"Please input a number, I will count for 1+2+...+your_input: "</span> nu</span><br><span class="line">s=0</span><br><span class="line"><span class="keyword">for</span> (( i=1; i&lt;=<span class="variable">$nu</span>; i=i+1 ))</span><br><span class="line"><span class="keyword">do</span></span><br><span class="line">	s=$((<span class="variable">$s</span>+<span class="variable">$i</span>))</span><br><span class="line"><span class="keyword">done</span></span><br><span class="line"><span class="built_in">echo</span> <span class="string">"The result of '1+2+3+...+<span class="variable">$nu</span>' is ==&gt; <span class="variable">$s</span>"</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="shell-script-的追踪-debug"><a href="#shell-script-的追踪-debug" class="headerlink" title="shell script 的追踪 debug"></a>shell script 的追踪 debug</h3><p><code>sh [-nvx] scripts.sh</code></p>
+<p>选项不参数:<br>-n :丌要执行 script，仅查询语法的问题;<br>-v :再执行 sccript 前，先将 scripts 的内容输出刡屏幕上;<br>-x :将使用刡的 script 内容显示刡屏幕上，这是很有用的参数!</p>
+<h3 id="函数"><a href="#函数" class="headerlink" title="函数"></a>函数</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">function</span> <span class="function"><span class="title">printit</span></span>() {</span><br><span class="line">	<span class="comment"># 加上 -n 可以丌断行继续在同一行显示</span></span><br><span class="line">	<span class="built_in">echo</span> -n <span class="string">"Your choice is "</span></span><br><span class="line">}</span><br><span class="line">printit; <span class="built_in">echo</span> <span class="string">"yes"</span></span><br></pre></td></tr></tbody></table></figure>
+<script>
+        document.querySelectorAll('.github-emojis')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://toyourheart163.github.io/2020/01/13/network-security/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="toyourheart163">
+      <meta itemprop="description" content="提升思维能力 普及常识 谈点技术">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="麦可乐的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/13/network-security/" class="post-title-link" itemprop="url">网络安全</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-01-13 21:25:22" itemprop="dateCreated datePublished" datetime="2020-01-13T21:25:22+08:00">2020-01-13</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-12 18:36:26" itemprop="dateModified" datetime="2021-03-12T18:36:26+08:00">2021-03-12</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="HTTP-IP协议与DNS域名系统"><a href="#HTTP-IP协议与DNS域名系统" class="headerlink" title="HTTP/IP协议与DNS域名系统"></a>HTTP/IP协议与DNS域名系统</h1><h2 id="HTTP"><a href="#HTTP" class="headerlink" title="HTTP"></a>HTTP</h2><p>比如我的博客是<code>http://toyourheart163.github.io</code><br>这个<code>http://</code>就是一个网络协议，传输html、js、图片、各种文件</p>
+<h2 id="SSL-TLS"><a href="#SSL-TLS" class="headerlink" title="SSL/TLS"></a>SSL/TLS</h2><p>SSL是“Secure Sockets Layer”的缩写，中文叫做“安全套接层”。<br>TLS是SSL标准化后改名的。（是“Transport Layer Security”的缩写），中文叫做“传输层安全协议”。</p>
+<h2 id="HTTP与TCP"><a href="#HTTP与TCP" class="headerlink" title="HTTP与TCP"></a>HTTP与TCP</h2><p>在网络7层分层模型中，TCP 被称为“传输层协议”，而 HTTP 被称为“应用层协议”。有很多常见的应用层协议是以 TCP 为基础的，比如“FTP、SMTP、POP、IMAP”等。</p>
+<p>传输层主要有两个协议，分别是 TCP 和 UDP。TCP 比 UDP 更可靠。你可以把 TCP 协议想象成某个水管，发送端这头进水，接收端那头就出水。并且 TCP 协议能够确保，先发送的数据先到达（与之相反，UDP 不保证这点）。</p>
+<p>HTTP 对 TCP 连接的使用，分为两种方式：俗称“短连接”和“长连接”。以前要传输的数据少，用短连接就可以了。现在连接一个网页要传输高清图片、js几十个、css几个，所以只能用长连接(keep-alive)减少CPU开销。比如某个银行app一打开，一下子去掉了我20M的流量。还有高德地图。</p>
+<h2 id="HTTPS"><a href="#HTTPS" class="headerlink" title="HTTPS"></a>HTTPS</h2><p>https 就是http与ssl组合，也就是加密了。手机抓包工具没有用了。只能在虚拟机上探测。除非手机root过了。</p>
+<p>HTTPS协议具有的特性，我关注的3点是：</p>
+<ol>
+<li>保密性（防泄密），防止被别人知道你看的内容。</li>
+<li>完整性（防篡改），防止电信加广告。</li>
+<li>真实性（防假冒），防止中间人攻击，比如百度把你访问<code>www.google.com</code>替换成百度首页的内容如果是涉及金融或者安全就麻烦了。修改ip要修改DNS.</li>
+</ol>
+<h2 id="手机app爬虫-ca证书"><a href="#手机app爬虫-ca证书" class="headerlink" title="手机app爬虫, ca证书"></a>手机app爬虫, ca证书</h2><p>中间人攻击可以在安卓虚拟机root后，传输mitmproxy证书，弄成根证书。然后在pc打开mitmproxy这个软件，在这过程中发现了微信老是传输一些东西到包含analysis的网址中。下次用个小号看看它在搞什么鬼！<br>也可以用Charles图形界面的抓包工具。mitmproxy的好处是配合python自动化。</p>
+<h2 id="服务器加密"><a href="#服务器加密" class="headerlink" title="服务器加密"></a>服务器加密</h2><p>购买ca证书, 然后nginx配置443端口与ssl，配置证书路径。</p>
+<h2 id="DNS"><a href="#DNS" class="headerlink" title="DNS"></a>DNS</h2><p>根据域名查ip地址</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ping -c 4 toyourheart163.github.io</span><br></pre></td></tr></tbody></table></figure>
+
+<table>
+<thead>
+<tr>
+<th>域名</th>
+<th>ip地址</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>toyourheart163.github.io</td>
+<td>185.199.111.153</td>
+</tr>
+</tbody></table>
+<p>hosts文件如果有域名与ip的对应关系就直达ip地址。假设设置错误，就会到达别的网站。<br>没有就从DNS域名服务查询。</p>
+<p>可以修改hosts文件直达ip地址，一般来说电脑的DNS设置是路由器的地址如：<code>192.168.1.1</code>，如果没有用路由器，看到的是电信的DNS，为了防止电信修改，可以修改为公共的。如<code>8.8.8.8</code></p>
+<script>
+        document.querySelectorAll('.github-emojis')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://toyourheart163.github.io/2020/01/08/pandas/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="toyourheart163">
+      <meta itemprop="description" content="提升思维能力 普及常识 谈点技术">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="麦可乐的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/08/pandas/" class="post-title-link" itemprop="url">pandas数据处理</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-01-08 21:17:39" itemprop="dateCreated datePublished" datetime="2020-01-08T21:17:39+08:00">2020-01-08</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-12 18:36:26" itemprop="dateModified" datetime="2021-03-12T18:36:26+08:00">2021-03-12</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="一开始不认识pandas，采用的是openpyxl库"><a href="#一开始不认识pandas，采用的是openpyxl库" class="headerlink" title="一开始不认识pandas，采用的是openpyxl库"></a>一开始不认识pandas，采用的是openpyxl库</h2><ul>
+<li>好处是可以合并单元格，设置颜色，还可以隐藏某些列表。</li>
+</ul>
+<blockquote>
+<p>如何删除表格首尾几行？</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>天下公司</th>
+<th></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>name</td>
+<td>age</td>
+</tr>
+<tr>
+<td>lisa</td>
+<td>18</td>
+</tr>
+<tr>
+<td>nacy</td>
+<td>20</td>
+</tr>
+<tr>
+<td>total</td>
+<td>38</td>
+</tr>
+</tbody></table>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">删除表格首尾几行</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="keyword">from</span> openpyxl <span class="keyword">import</span> load_workbook</span><br><span class="line"></span><br><span class="line">wb = load_workbook(<span class="string">'excel.xlsx'</span>)</span><br><span class="line">ws = wb.active</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">ws_remove_front_and_end_rows</span>(<span class="params">ws</span>):</span></span><br><span class="line">    <span class="comment"># 删除前1行注释</span></span><br><span class="line">    ws.delete_rows(<span class="number">0</span>,<span class="number">1</span>)</span><br><span class="line">    <span class="comment"># 删除最后一行的统计</span></span><br><span class="line">    ws.delete_rows(ws.max_row,ws.max_row)</span><br><span class="line">    data = ws.values</span><br><span class="line">    <span class="comment"># 第二行作为列表名</span></span><br><span class="line">    columns = <span class="built_in">next</span>(data)[<span class="number">0</span>:]</span><br><span class="line">    df = pd.DataFrame(data, columns=columns)</span><br><span class="line">    <span class="keyword">return</span> df</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="总结一下pandas数据处理"><a href="#总结一下pandas数据处理" class="headerlink" title="总结一下pandas数据处理"></a>总结一下pandas数据处理</h2><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="读取文件"><a href="#读取文件" class="headerlink" title="读取文件"></a>读取文件</h3><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 读取excel文件的名叫sheet2工作表</span></span><br><span class="line">filename = <span class="string">'file.xlsx'</span></span><br><span class="line">df = pd.read_excel(filename, sheet_name=<span class="string">'sheet2'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 读取多个工作表，合并成1个表格。</span></span><br><span class="line"><span class="keyword">import</span> xlrd <span class="keyword">as</span> xl</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">concat_sheets</span>(<span class="params">filename</span>)</span></span><br><span class="line"><span class="function">    '''<span class="title">merge</span> <span class="title">many</span> <span class="title">sheets</span> <span class="title">to</span> <span class="title">one</span> <span class="title">DataFrame</span>'''</span></span><br><span class="line">    wb = xl.open_workbook(filename)</span><br><span class="line">    sheet_names = wb.sheet_names()  <span class="comment"># 获取多个工作表名。</span></span><br><span class="line">    xlsx = pd.ExcelFile(filename)</span><br><span class="line">    ts = pd.DataFrame()</span><br><span class="line">    <span class="keyword">for</span> sheet_name <span class="keyword">in</span> sheet_names:</span><br><span class="line">        df = pd.read_excel(xlsx, sheet_name=sheet_name)</span><br><span class="line">        ts = ts.append(df, ignore_index=<span class="literal">True</span>)</span><br><span class="line">    <span class="keyword">return</span> ts</span><br><span class="line"></span><br><span class="line"><span class="comment"># 读取文件编码为gb18030的csv</span></span><br><span class="line">ts = pd.read_csv(<span class="string">'file.csv'</span>, encoding=<span class="string">'gb18030'</span>)</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="基本操作"><a href="#基本操作" class="headerlink" title="基本操作"></a>基本操作</h3><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 修改列名</span></span><br><span class="line">df = df.rename(columns={<span class="string">'仓库'</span>: <span class="string">'仓库名称'</span>})  </span><br><span class="line"></span><br><span class="line"><span class="comment"># 读取文件修改列的类型</span></span><br><span class="line">df = pd.read_excel(filename, dtype={<span class="string">'外部编码'</span>: <span class="built_in">str</span>, <span class="string">'外部sku'</span>: <span class="string">'int32'</span>})</span><br><span class="line"></span><br><span class="line"><span class="comment"># 合并，以左边的表格为准</span></span><br><span class="line">res = pd.merge(ts, df, on=[<span class="string">'外部编码'</span>, <span class="string">'外部sku'</span>], how=<span class="string">'left'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 这个是什么操作</span></span><br><span class="line">df.between_time(<span class="string">'20180908'</span>, <span class="string">'20180909'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 选择列、行</span></span><br><span class="line">df.loc[:, [<span class="string">'货品编码'</span>, <span class="string">'货品名称'</span>]]</span><br><span class="line">df = df[df[<span class="string">'货品编码'</span>]==<span class="number">6971525990012</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重置索引</span></span><br><span class="line">df.reset_index()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 时间处理</span></span><br><span class="line">pd.Timestamp(<span class="string">'2018-10-23 16:49:13.700945'</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 改变一列的时间格式</span></span><br><span class="line">df[<span class="string">'时间'</span>] = df[<span class="string">'时间'</span>].apply(<span class="keyword">lambda</span> x: pd.Timestamp(x).strftime(<span class="string">'%Y-%m-%d'</span>))</span><br><span class="line">df[<span class="string">'时间'</span>] = df[<span class="string">'时间'</span>].<span class="built_in">map</span>(<span class="keyword">lambda</span> x: x[:<span class="number">10</span>])</span><br><span class="line"></span><br><span class="line"><span class="comment"># 某个月的最后一天</span></span><br><span class="line"><span class="keyword">from</span> calendar <span class="keyword">import</span> monthrange</span><br><span class="line">month_last_day = monthrange(year=<span class="number">2018</span>, month=<span class="number">10</span>)[<span class="number">1</span>]  <span class="comment"># 31</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 统计总和</span></span><br><span class="line">df.groupby([<span class="string">'仓库名称'</span>, <span class="string">'货品id'</span>, <span class="string">'货品名称'</span>]).<span class="built_in">sum</span>()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 备注1列包含"村淘"2个字</span></span><br><span class="line">df[df[<span class="string">'备注'</span>].<span class="built_in">str</span>.contains(<span class="string">'村淘'</span>)]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 不包含，加了~</span></span><br><span class="line">df[~df[<span class="string">'备注'</span>].<span class="built_in">str</span>.contains(<span class="string">'村淘'</span>)]</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="高级操作"><a href="#高级操作" class="headerlink" title="高级操作"></a>高级操作</h2><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 以index为时间，计算每段时间内的数据，3M代表3个月，3个月之和</span></span><br><span class="line">df.resample(<span class="string">'3M'</span>).<span class="built_in">sum</span>()</span><br><span class="line"></span><br><span class="line"><span class="comment"># 负数变红，引起重视。</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">color_negative_red</span>(<span class="params">val</span>):</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    Takes a scalar and returns a string with</span></span><br><span class="line"><span class="string">    the css property `'color: red'` for negative</span></span><br><span class="line"><span class="string">    strings, black otherwise.</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    color = <span class="string">'red'</span> <span class="keyword">if</span> val &lt; <span class="number">0</span> <span class="keyword">else</span> <span class="string">'Blue'</span></span><br><span class="line">    <span class="keyword">return</span> <span class="string">'color: %s'</span> % color</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">highlight_max</span>(<span class="params">s</span>):</span></span><br><span class="line">    <span class="string">'''</span></span><br><span class="line"><span class="string">    highlight the maximum in a Series yellow.</span></span><br><span class="line"><span class="string">    '''</span></span><br><span class="line">    is_max = s == s.<span class="built_in">max</span>()</span><br><span class="line">    <span class="keyword">return</span> [<span class="string">'background-color: yellow'</span> <span class="keyword">if</span> v <span class="keyword">else</span> <span class="string">''</span> <span class="keyword">for</span> v <span class="keyword">in</span> is_max]</span><br><span class="line"></span><br><span class="line"><span class="comment"># 链式操作，正数蓝色，负数红色，最大值黄色，一目了然。</span></span><br><span class="line">df.style.applymap(color_negative_red).apply(highlight_max)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 导出excel格式，并忽略索引列</span></span><br><span class="line">df.to_excel(<span class="string">"res.xlsx"</span>, index=<span class="literal">False</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 保存多个工作表到1个文件</span></span><br><span class="line">xls = pd.ExcelWriter(<span class="string">'file_write.xlsx'</span>)</span><br><span class="line">df1.to_excel(xls, sheet_name=<span class="string">'7月'</span>)</span><br><span class="line">df2.to_excel(xls, sheet_name=<span class="string">'8月'</span>)</span><br><span class="line">xls.save()</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="实例演示"><a href="#实例演示" class="headerlink" title="实例演示"></a>实例演示</h2><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="string">计算店铺消费超过500元的客户</span></span><br><span class="line"><span class="string">'''</span></span><br><span class="line"><span class="keyword">import</span> os</span><br><span class="line"><span class="keyword">import</span> time</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> pymongo</span><br><span class="line"><span class="keyword">import</span> pandas <span class="keyword">as</span> pd</span><br><span class="line"></span><br><span class="line">client = pymongo.MongoClient()</span><br><span class="line">db = client.goods</span><br><span class="line">tag = <span class="string">'selled_order_list'</span></span><br><span class="line">coll = db[tag]</span><br><span class="line"><span class="comment"># coll.find().count()</span></span><br><span class="line">collection = db.max_500</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_max_500_in_3_month</span>(<span class="params">shop</span>):</span></span><br><span class="line">    <span class="string">'''从销售数据表1统计某3个月消费超过500元的客户，保存的max_500数据表'''</span></span><br><span class="line">    <span class="comment"># 从数据库获取数据，并且倒序</span></span><br><span class="line">    results = coll.find({</span><br><span class="line">        <span class="string">'店铺名称'</span>: shop</span><br><span class="line">        }).sort(<span class="string">'订单创建时间'</span>, pymongo.DESCENDING)  <span class="comment"># .skip(100000).limit(100000)  # 降序</span></span><br><span class="line">    datas = <span class="built_in">list</span>(results)</span><br><span class="line">    df = pd.DataFrame(datas)</span><br><span class="line"></span><br><span class="line">    df[<span class="string">'买家实际支付金额'</span>] = df[<span class="string">'买家实际支付金额'</span>].astype(<span class="string">'float'</span>)</span><br><span class="line">    ts = df[[<span class="string">'买家会员名'</span>, <span class="string">'买家实际支付金额'</span>, <span class="string">'订单状态'</span>, <span class="string">'订单创建时间'</span>]]</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 不需要交易已关闭的</span></span><br><span class="line">    ts = ts[ts[<span class="string">'订单状态'</span>]!=<span class="string">'交易关闭'</span>]</span><br><span class="line">    ts = ts.drop(columns=[<span class="string">'订单状态'</span>])</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 把index设置为时间，方便统计某个时间段的数据</span></span><br><span class="line">    ts = ts.set_index(<span class="string">'订单创建时间'</span>)</span><br><span class="line">    <span class="comment"># ts.describe()</span></span><br><span class="line">    names = <span class="built_in">set</span>(ts[<span class="string">'买家会员名'</span>])</span><br><span class="line">    print(shop, <span class="string">'共有'</span>, <span class="built_in">len</span>(names), <span class="string">'用户'</span>)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">max_500</span>(<span class="params">name</span>):</span></span><br><span class="line">        <span class="string">'''某3个月购买大于500元的客户'''</span></span><br><span class="line">        tf = ts[ts[<span class="string">'买家会员名'</span>]==name]</span><br><span class="line">        tf = tf.sort_values(<span class="string">'订单创建时间'</span>, ascending=<span class="literal">False</span>)</span><br><span class="line">        s = tf.resample(<span class="string">'3M'</span>).<span class="built_in">sum</span>()</span><br><span class="line">        s_max = s.<span class="built_in">max</span>()[<span class="string">'买家实际支付金额'</span>]</span><br><span class="line">        tf_sum = tf.groupby(<span class="string">'买家会员名'</span>).<span class="built_in">sum</span>()[<span class="string">'买家实际支付金额'</span>][<span class="number">0</span>]</span><br><span class="line">        tf_mean = tf_sum / <span class="built_in">len</span>(tf.index)</span><br><span class="line">        <span class="keyword">if</span> s_max &gt;= <span class="number">500</span>:</span><br><span class="line">            now = pd.Timestamp.now()</span><br><span class="line">            user = {</span><br><span class="line">                <span class="string">'旺旺'</span>: name,</span><br><span class="line">                <span class="string">'3个月支付金额之和'</span>: s_max,</span><br><span class="line">                <span class="string">'购买时间段'</span>: s.index[-<span class="number">1</span>],</span><br><span class="line">                <span class="string">'开始购买时间'</span>: tf.index[-<span class="number">1</span>],</span><br><span class="line">                <span class="string">'开始购买金额'</span>: tf[<span class="string">'买家实际支付金额'</span>][-<span class="number">1</span>],</span><br><span class="line">                <span class="string">'最后购买时间'</span>: tf.index[<span class="number">0</span>],</span><br><span class="line">                <span class="string">'最后购买金额'</span>: tf[<span class="string">'买家实际支付金额'</span>][<span class="number">0</span>],</span><br><span class="line">                <span class="string">'平均下单金额'</span>: <span class="built_in">round</span>(tf_mean, <span class="number">2</span>),</span><br><span class="line">                <span class="string">'下单总数'</span>: <span class="built_in">len</span>(tf.index),</span><br><span class="line">                <span class="string">'下单总金额'</span>: tf.groupby(<span class="string">'买家会员名'</span>).<span class="built_in">sum</span>()[<span class="string">'买家实际支付金额'</span>][<span class="number">0</span>],</span><br><span class="line">                <span class="string">'店名'</span>: shop,</span><br><span class="line">                <span class="string">'更新时间'</span>: now</span><br><span class="line">            }</span><br><span class="line">            collection.insert_one(user)</span><br><span class="line">    </span><br><span class="line">    print(pd.Timestamp.now(), <span class="string">'开始插入数据库'</span>)</span><br><span class="line">    <span class="keyword">for</span> i, name <span class="keyword">in</span> <span class="built_in">enumerate</span>(<span class="built_in">list</span>(names)):</span><br><span class="line">        <span class="keyword">if</span> i % <span class="number">2000</span> == <span class="number">0</span>:</span><br><span class="line">            print(pd.Timestamp.now(), <span class="string">'解析到=&gt;第 '</span>, i+<span class="number">1</span>, <span class="string">' 个用户'</span>)</span><br><span class="line">            max_500(name)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            max_500(name)</span><br><span class="line"></span><br><span class="line">    print(pd.Timestamp.now(), <span class="string">' insert end'</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__==<span class="string">'__main__'</span>:</span><br><span class="line">    get_max_500_in_3_month(shop=<span class="string">'麦可乐的淘宝店'</span>)</span><br></pre></td></tr></tbody></table></figure><script>
+        document.querySelectorAll('.github-emojis')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://toyourheart163.github.io/2020/01/07/appium-spider/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="toyourheart163">
+      <meta itemprop="description" content="提升思维能力 普及常识 谈点技术">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="麦可乐的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/07/appium-spider/" class="post-title-link" itemprop="url">appium-spider 爬取手机app抖音等, 配置</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-01-07 19:56:28" itemprop="dateCreated datePublished" datetime="2020-01-07T19:56:28+08:00">2020-01-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-12 18:36:26" itemprop="dateModified" datetime="2021-03-12T18:36:26+08:00">2021-03-12</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="apps-scrapy-爬取记录"><a href="#apps-scrapy-爬取记录" class="headerlink" title="apps scrapy 爬取记录"></a>apps scrapy 爬取记录</h2><h3 id="安装appium-backup-your-app-data-because-it-will-clear-your-app-data"><a href="#安装appium-backup-your-app-data-because-it-will-clear-your-app-data" class="headerlink" title="安装appium, backup your app data, because it will clear your app data."></a>安装appium, <strong>backup your app data, because it will clear your app data.</strong></h3><blockquote>
+<p>请备份你要测试的app的数据.</p>
+</blockquote>
+<blockquote>
+<p>请备份你要测试的app的数据.</p>
+</blockquote>
+<blockquote>
+<p>请备份你要测试的app的数据.</p>
+</blockquote>
+<p>重要的事多说几遍。如果你的手机不是测试机，最好先备份。比如我首先用来测试的酷安，数据就被清空了。</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 在电脑上安装appium</span></span><br><span class="line"><span class="comment"># in pc</span></span><br><span class="line">$ npm install -g appium  <span class="comment"># 可能不支持旧版的安卓比如4.4的 </span></span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="需要安装java和对应的sdk"><a href="#需要安装java和对应的sdk" class="headerlink" title="需要安装java和对应的sdk"></a>需要安装java和对应的sdk</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install java </span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="下载安装Android-Studio"><a href="#下载安装Android-Studio" class="headerlink" title="下载安装Android Studio"></a>下载安装Android Studio</h4><p><a target="_blank" rel="noopener" href="https://developer.android.com/studio">https://developer.android.com/studio</a><br>安装后下载sdk<a target="_blank" rel="noopener" href="https://cuiqingcai.com/5407.html">安装方法</a><br>我的安卓版本是9.1需要下载Android Api 28的Android SDK Platform 28    </p>
+<ul>
+<li>配置ANDROID_HOME、JAVA_HOME变量</li>
+</ul>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># ~/.zshrc 仅供参考, 替换用户名heart为你的。</span></span><br><span class="line"><span class="built_in">export</span> ANDROID_HOME=/Users/heart/Library/Android/sdk</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$ANDROID_HOME</span>/sdk/tools:<span class="variable">$PATH</span></span><br><span class="line"><span class="built_in">export</span> PATH=<span class="variable">$ANDROID_HOME</span>/sdk/platform-tools:<span class="variable">$PATH</span></span><br><span class="line"><span class="built_in">export</span> JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="使用，我的测试机器是mac电脑"><a href="#使用，我的测试机器是mac电脑" class="headerlink" title="使用，我的测试机器是mac电脑"></a>使用，我的测试机器是mac电脑</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 在电脑上查看已连接usb的手机</span></span><br><span class="line"><span class="comment"># in pc</span></span><br><span class="line">$ adb devices -l  <span class="comment"># windows可能是adb devices</span></span><br><span class="line">SH12EPL03311           device usb:336592896X product:htc_bravo model:HTC_Desire device:bravo</span><br><span class="line">9FK0219304005159       device usb:337641472X product:ELE-AL00 model:ELE_AL00 device:HWELE</span><br></pre></td></tr></tbody></table></figure>
+
+<p>可以看到有2台手机连接了电脑，记一下model的名字ELE_AL00, device的HWELE在adb shell会看到</p>
+<blockquote>
+<p>in android</p>
+</blockquote>
+<p>open your app which want to test.<br>打开你想要测试的app</p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># in pc</span></span><br><span class="line">$ adb shell</span><br><span class="line">HWELE:/ $ </span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="手机上打开抖音，电脑输入下列命令"><a href="#手机上打开抖音，电脑输入下列命令" class="headerlink" title="手机上打开抖音，电脑输入下列命令"></a>手机上打开抖音，电脑输入下列命令</h3><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># pc输入dumpsys window windows | grep -E mCurrentFocus, window需要`mCurrentFocus`加引号</span></span><br><span class="line">HWELE:/ $ dumpsys window windows | grep -E mCurrentFocus</span><br><span class="line">  mCurrentFocus=Window{dc9f877 u0 com.ss.android.ugc.aweme/com.ss.android.ugc.aweme.main.MainActivity}</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="显示结果分析"><a href="#显示结果分析" class="headerlink" title="显示结果分析"></a>显示结果分析</h3><p>  <code>com.ss.android.ugc.aweme</code>就是后面要用到的appPackage<br><code>com.ss.android.ugc.aweme.main.MainActivity</code>的<code>.main.MainActivity</code>是后面要用到的appActivity</p>
+<figure class="highlight json"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">{</span><br><span class="line">  <span class="attr">"platformName"</span>: <span class="string">"Android"</span>,</span><br><span class="line">  <span class="attr">"deviceName"</span>: <span class="string">"ELE_AL00"</span>,</span><br><span class="line">  <span class="attr">"appPackage"</span>: <span class="string">"com.ss.android.ugc.aweme"</span>,</span><br><span class="line">  <span class="attr">"appActivity"</span>: <span class="string">".main.MainActivity"</span></span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<blockquote>
+<p>上面的json数据需要填入appium里面</p>
+</blockquote>
+<h3 id="分析结果"><a href="#分析结果" class="headerlink" title="分析结果"></a>分析结果</h3><p>明显<code>appPackage</code> + <code>appActivity</code> = <code>com.ss.android.ugc.aweme.main.MainActivity</code></p>
+<p>$ 配置完毕</p>
+<script>
+        document.querySelectorAll('.github-emojis')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://toyourheart163.github.io/2020/01/05/django-nginx-uwsgi/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="toyourheart163">
+      <meta itemprop="description" content="提升思维能力 普及常识 谈点技术">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="麦可乐的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2020/01/05/django-nginx-uwsgi/" class="post-title-link" itemprop="url">django nginx uwsgi 配置</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2020-01-05 14:35:14" itemprop="dateCreated datePublished" datetime="2020-01-05T14:35:14+08:00">2020-01-05</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-12 18:36:26" itemprop="dateModified" datetime="2021-03-12T18:36:26+08:00">2021-03-12</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="服务器配置，一般来说官网最可靠。"><a href="#服务器配置，一般来说官网最可靠。" class="headerlink" title="服务器配置，一般来说官网最可靠。"></a>服务器配置，一般来说官网最可靠。</h1><blockquote>
+<p>官网的一般是最新版的，你在别的地方找到的配置可能用不了。</p>
+</blockquote>
+<h2 id="记录nginx与uwsig配置"><a href="#记录nginx与uwsig配置" class="headerlink" title="记录nginx与uwsig配置"></a>记录nginx与uwsig配置</h2><ul>
+<li>uwsgi 处理动态数据。<code>pip install uwsgi</code>安装。</li>
+<li>nginx 作为反向代理服务器，更安全、处理static文件效率更高。</li>
+</ul>
+<h3 id="uwsgi-配置"><a href="#uwsgi-配置" class="headerlink" title="uwsgi 配置"></a>uwsgi 配置</h3><blockquote>
+<p>主要是能执行wsgi.py文件即可，socket本地要与nginx对应即可</p>
+</blockquote>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">[uwsgi]</span><br><span class="line"></span><br><span class="line">base=/home/heart/Documents/server/vuedjango</span><br><span class="line">socket=127.0.0.1:8000</span><br><span class="line">chdir=%(base)</span><br><span class="line">wsgi-file=vuedjango/wsgi.py  # 主要 !important</span><br><span class="line">processes=4</span><br><span class="line">threads=2</span><br><span class="line">pythonhome=/usr/local/bin/python3</span><br><span class="line">logto=%(base)/logs/uwsgi.log</span><br></pre></td></tr></tbody></table></figure>
+
+<p>启动<code>uwsgi uwsgi.ini</code>，<a target="_blank" rel="noopener" href="http://127.0.0.1:8000">访问</a>，访问成功后可关闭<code>ctrl+c</code>。</p>
+<h3 id="nginx-配置"><a href="#nginx-配置" class="headerlink" title="nginx 配置"></a>nginx 配置</h3><h4 id="局部配置-nginx-conf，绝对路径，监听80或443端口一起"><a href="#局部配置-nginx-conf，绝对路径，监听80或443端口一起" class="headerlink" title="局部配置 nginx.conf，绝对路径，监听80或443端口一起"></a>局部配置 nginx.conf，绝对路径，监听80或443端口一起</h4><blockquote>
+<p>/home/heart/Documents/server/vuedjango/nginx.conf</p>
+</blockquote>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">server {</span><br><span class="line">    listen      80;</span><br><span class="line">    server_name _;</span><br><span class="line">    access_log /home/heart/Documents/server/vuedjango/logs/access.log;</span><br><span class="line">    error_log /home/heart/Documents/server/vuedjango/logs/error.log;</span><br><span class="line">    location / {</span><br><span class="line">        include uwsgi_params;</span><br><span class="line">        uwsgi_pass 127.0.0.1:8000;</span><br><span class="line">    }</span><br><span class="line">    location /static/ {</span><br><span class="line">        alias /home/heart/Documents/server/vuedjango/static/;</span><br><span class="line">        expires 30d;</span><br><span class="line">    }</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<h4 id="全局配置，系统级别"><a href="#全局配置，系统级别" class="headerlink" title="全局配置，系统级别"></a>全局配置，系统级别</h4><blockquote>
+<p>include匹配局部配置*.conf</p>
+</blockquote>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line">user root;</span><br><span class="line">worker_processes auto;</span><br><span class="line">pid /run/nginx.pid;</span><br><span class="line">include /usr/share/nginx/modules/*.conf;</span><br><span class="line"></span><br><span class="line">events {</span><br><span class="line">    worker_connections 768;</span><br><span class="line">    use epoll;</span><br><span class="line">}</span><br><span class="line"></span><br><span class="line">http {</span><br><span class="line"></span><br><span class="line">    log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '</span><br><span class="line">                    '$status $body_bytes_sent "$http_referer" '</span><br><span class="line">                    '"$http_user_agent" "$http_x_forwarded_for"';</span><br><span class="line">    # 访问日志</span><br><span class="line">    access_log  /var/log/nginx/access.log  main;</span><br><span class="line">    sendfile on;</span><br><span class="line">    tcp_nopush on;</span><br><span class="line">    tcp_nodelay on;</span><br><span class="line">    keepalive_timeout 65;</span><br><span class="line">    types_hash_max_size 2048;</span><br><span class="line">    # server_tokens off;</span><br><span class="line"></span><br><span class="line">    include /etc/nginx/mime.types;</span><br><span class="line">    default_type application/octet-stream;</span><br><span class="line"></span><br><span class="line">    access_log /var/log/nginx/access.log;</span><br><span class="line">    error_log /var/log/nginx/error.log;</span><br><span class="line">    ##</span><br><span class="line">    # Virtual Host Configs</span><br><span class="line">    ##</span><br><span class="line"></span><br><span class="line">    include /etc/nginx/conf.d/*.conf;</span><br><span class="line">    include /home/heart/Documents/server/vuedjango/*conf;</span><br><span class="line">}</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="启动服务"><a href="#启动服务" class="headerlink" title="启动服务"></a>启动服务</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">uwsgi uwsgi.ini</span><br><span class="line">sudo nginx -s reload</span><br><span class="line"><span class="comment"># or sudo service nginx restart</span></span><br></pre></td></tr></tbody></table></figure>
+
+<blockquote>
+<p>这时候不能直接访问8000端口，因为已经反向代理了，只能直接访问ip地址了。</p>
+</blockquote>
+<h2 id="supervisor进程管理，支持python3"><a href="#supervisor进程管理，支持python3" class="headerlink" title="supervisor进程管理，支持python3"></a>supervisor进程管理，支持python3</h2><blockquote>
+<p>install</p>
+</blockquote>
+<p><code>pip install supervisor</code></p>
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># general</span></span><br><span class="line">sudo echo_supervisord_conf &gt; /etc/supervisord.conf</span><br><span class="line">sudo vi /etc/supervisord.conf</span><br></pre></td></tr></tbody></table></figure>
+
+<blockquote>
+<p>修改</p>
+</blockquote>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">[include]</span><br><span class="line">files = /etc/supervisord.d/*.ini</span><br></pre></td></tr></tbody></table></figure>
+
+<blockquote>
+<p>新建</p>
+</blockquote>
+<p><code>sudo vi /etc/supervisord.d/vuedjango.ini</code></p>
+<blockquote>
+<p>program: 后面的vuedjango是你要识别的名字</p>
+</blockquote>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[program:vuedjango]</span><br><span class="line">command=uwsgi /home/heart/Documents/server/vuedjango/uwsgi.ini</span><br><span class="line">autostart=true</span><br><span class="line">autorestart=true</span><br><span class="line">redirect_stderr=true</span><br><span class="line"></span><br><span class="line">killasgroup=true </span><br></pre></td></tr></tbody></table></figure>
+
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 停止 uwsgi uwsgi.ini 用supervisor来管理</span></span><br><span class="line">sudo supervisorctl reload</span><br><span class="line">sudo supervisorctl start vuedjango</span><br><span class="line">sudo supervisorctl status</span><br></pre></td></tr></tbody></table></figure>
+
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">$ sudo supervisorctl stop vuedjango  <span class="comment"># 无法停止</span></span><br><span class="line">$ ps -aux | grep uwsgi</span><br><span class="line">heart     3520  0.0  3.1 127824 32332 ?        Sl   16:45   0:00 uwsgi /home/heart/Documents/server/vuedjango/uwsgi.ini</span><br><span class="line">heart     3521  0.0  2.9 126920 29908 ?        Sl   16:45   0:00 uwsgi /home/heart/Documents/server/vuedjango/uwsgi.ini</span><br><span class="line">heart     3522  0.0  2.9 126920 29908 ?        Sl   16:45   0:00 uwsgi /home/heart/Documents/server/vuedjango/uwsgi.ini</span><br><span class="line">heart     3628  0.0  0.0  11036   884 pts/1    S+   16:48   0:00 grep --color=auto --exclude-dir=.bzr --exclude-dir=CVS --exclude-dir=.git --exclude-dir=.hg --exclude-dir=.svn uwsgi</span><br><span class="line"></span><br><span class="line">$ killall uwsgi</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="无法停止的原因是开了4个线程-增加-master-true-重新启动supervisor就可以啦。"><a href="#无法停止的原因是开了4个线程-增加-master-true-重新启动supervisor就可以啦。" class="headerlink" title="无法停止的原因是开了4个线程, 增加 master = true 重新启动supervisor就可以啦。"></a>无法停止的原因是开了4个线程, 增加 master = true 重新启动supervisor就可以啦。</h2><figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># uwsgi.ini</span></span><br><span class="line">processes = 4</span><br><span class="line">master = <span class="literal">true</span></span><br></pre></td></tr></tbody></table></figure>
+<script>
+        document.querySelectorAll('.github-emojis')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://toyourheart163.github.io/2019/12/31/python-site-packages-issues/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="toyourheart163">
+      <meta itemprop="description" content="提升思维能力 普及常识 谈点技术">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="麦可乐的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/12/31/python-site-packages-issues/" class="post-title-link" itemprop="url">python-site-packages-issues</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-12-31 14:44:55" itemprop="dateCreated datePublished" datetime="2019-12-31T14:44:55+08:00">2019-12-31</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-12 18:36:26" itemprop="dateModified" datetime="2021-03-12T18:36:26+08:00">2021-03-12</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="Matplotlib引用错误"><a href="#Matplotlib引用错误" class="headerlink" title="Matplotlib引用错误"></a>Matplotlib引用错误</h2><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">In [<span class="number">1</span>]: <span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line">ModuleNotFoundError: No module named <span class="string">'matplotlib.pyplot'</span></span><br></pre></td></tr></tbody></table></figure>
+
+<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ImportError: Matplotlib qt-based backends require an external PyQt4, PyQt5,</span><br><span class="line">PySide or PySide2 package to be installed, but it was not found.</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="解决"><a href="#解决" class="headerlink" title="解决"></a>解决</h3><p><code>pip install PyQt5</code></p>
+<script>
+        document.querySelectorAll('.github-emojis')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://toyourheart163.github.io/2019/12/30/git-flow-github-flow/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="toyourheart163">
+      <meta itemprop="description" content="提升思维能力 普及常识 谈点技术">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="麦可乐的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/12/30/git-flow-github-flow/" class="post-title-link" itemprop="url">git-flow-github-flow进阶</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-12-30 18:11:41" itemprop="dateCreated datePublished" datetime="2019-12-30T18:11:41+08:00">2019-12-30</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-12 18:36:26" itemprop="dateModified" datetime="2021-03-12T18:36:26+08:00">2021-03-12</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="git-进阶"><a href="#git-进阶" class="headerlink" title="git 进阶"></a>git 进阶</h1><p>以下内容学习自IBM：曹志。感谢他的通俗易懂的解释。</p>
+<h2 id="一、基础简介"><a href="#一、基础简介" class="headerlink" title="一、基础简介"></a>一、基础简介</h2><h3 id="系统级别配置"><a href="#系统级别配置" class="headerlink" title="系统级别配置"></a>系统级别配置</h3><p><code>git config --system -l</code></p>
+<h3 id="ignore-忽略文件"><a href="#ignore-忽略文件" class="headerlink" title="ignore 忽略文件"></a>ignore 忽略文件</h3><table>
+<thead>
+<tr>
+<th>模式</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>完整路径</td>
+<td>db.sqlite3</td>
+</tr>
+<tr>
+<td>/path</td>
+<td>只匹配当前这个文件 /config.py</td>
+</tr>
+<tr>
+<td>path</td>
+<td>当前目录与递归目录的文件 *.pyc</td>
+</tr>
+<tr>
+<td>path/</td>
+<td>只匹配目录及其文件</td>
+</tr>
+<tr>
+<td>带*</td>
+<td>所有满足的条件 *.zip</td>
+</tr>
+<tr>
+<td>带**</td>
+<td>满足前后路径 Dev/**/dev.conf</td>
+</tr>
+<tr>
+<td>!path</td>
+<td>不忽略</td>
+</tr>
+</tbody></table>
+<h2 id="二、基础配置"><a href="#二、基础配置" class="headerlink" title="二、基础配置"></a>二、基础配置</h2><h3 id="git-的三种状态"><a href="#git-的三种状态" class="headerlink" title="git 的三种状态"></a>git 的三种状态</h3><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Modified(已修改)</span><br><span class="line">Staged(已暂存)  add/rm/mv  可用git add/rm/mv 保存到暂存区</span><br><span class="line">Commited(已提交)</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="三个工作区域"><a href="#三个工作区域" class="headerlink" title="三个工作区域"></a>三个工作区域</h3><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">工作区</span><br><span class="line">暂存区</span><br><span class="line">仓库目录 .git</span><br></pre></td></tr></tbody></table></figure>
+
+<blockquote>
+<p>暂存区 可以任意修改，保证提交历史的干净。另一个作用是开分支不想提交时git stash暂存和未暂存的保存到缓冲栈。比如我<code>git checkout -</code>把一点未暂存的丢失了</p>
+</blockquote>
+<h3 id="fetch-与-pull-区别"><a href="#fetch-与-pull-区别" class="headerlink" title="fetch 与 pull 区别"></a>fetch 与 pull 区别</h3><p>pull 相当于 git fetch &amp; git merge<br>就是先获取再合并。</p>
+<h2 id="四、撤消"><a href="#四、撤消" class="headerlink" title="四、撤消"></a>四、撤消</h2><p>revert 回滚<br>提交一个commit覆盖前面的。要写一下原因。</p>
+<p>恢复到某个commit</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git log  # find id</span><br><span class="line">git reset --hard commit_id # 暴力操作。</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="五、分支管理策略"><a href="#五、分支管理策略" class="headerlink" title="五、分支管理策略"></a>五、分支管理策略</h2><h3 id="git-flow"><a href="#git-flow" class="headerlink" title="git flow"></a>git flow</h3><p>发布多个版本</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">master 生命周期长，项目开始就存在</span><br><span class="line">dev 长</span><br><span class="line">feature</span><br><span class="line">hotfixed</span><br><span class="line">releases</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="github-flow"><a href="#github-flow" class="headerlink" title="github flow"></a>github flow</h3><p>发布单一版本 master</p>
+<p>用pull request代码评审</p>
+<script>
+        document.querySelectorAll('.github-emojis')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">toyourheart163</p>
+  <div class="site-description" itemprop="description">提升思维能力 普及常识 谈点技术</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">34</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">59</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/toyourheart163" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;toyourheart163" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://github.com/toyourheart163" title="https:&#x2F;&#x2F;github.com&#x2F;toyourheart163" rel="noopener" target="_blank">repos</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2019 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">toyourheart163</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var canonicalURL, curProtocol;
+      //Get the <link> tag
+      var x=document.getElementsByTagName("link");
+		//Find the last canonical URL
+		if(x.length > 0){
+			for (i=0;i<x.length;i++){
+				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+					canonicalURL=x[i].href;
+				}
+			}
+		}
+    //Get protocol
+	    if (!canonicalURL){
+	    	curProtocol = window.location.protocol.split(':')[0];
+	    }
+	    else{
+	    	curProtocol = canonicalURL.split(':')[0];
+	    }
+      //Get current URL if the canonical URL does not exist
+	    if (!canonicalURL) canonicalURL = window.location.href;
+	    //Assign script content. Replace current URL with the canonical URL
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+
+</body>
+</html>

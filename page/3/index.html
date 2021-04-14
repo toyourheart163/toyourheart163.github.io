@@ -1,0 +1,1771 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"toyourheart163.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":true,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":true,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.json"};
+  </script>
+
+  <meta name="description" content="提升思维能力 普及常识 谈点技术">
+<meta property="og:type" content="website">
+<meta property="og:title" content="麦可乐的博客">
+<meta property="og:url" content="https://toyourheart163.github.io/page/3/index.html">
+<meta property="og:site_name" content="麦可乐的博客">
+<meta property="og:description" content="提升思维能力 普及常识 谈点技术">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="toyourheart163">
+<meta property="article:tag" content="python">
+<meta property="article:tag" content="vue">
+<meta property="article:tag" content="docker">
+<meta property="article:tag" content="django pandas">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://toyourheart163.github.io/page/3/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>麦可乐的博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<link rel="alternate" href="/atom.xml" title="麦可乐的博客" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">麦可乐的博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">Stay hungry, stay foolish.</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签<span class="badge">59</span></a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类<span class="badge">5</span></a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档<span class="badge">34</span></a>
+
+  </li>
+        <li class="menu-item menu-item-friends">
+
+    <a href="/friends/" rel="section"><i class="fas fa-address-book fa-fw"></i>friends</a>
+
+  </li>
+        <li class="menu-item menu-item-sitemap">
+
+    <a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+  <a role="button" class="book-mark-link book-mark-link-fixed"></a>
+
+  <a href="https://github.com/toyourheart163" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank"><svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://toyourheart163.github.io/2019/12/26/git-tips/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="toyourheart163">
+      <meta itemprop="description" content="提升思维能力 普及常识 谈点技术">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="麦可乐的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/12/26/git-tips/" class="post-title-link" itemprop="url">git-tips</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-12-26 20:57:34" itemprop="dateCreated datePublished" datetime="2019-12-26T20:57:34+08:00">2019-12-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-12 18:36:26" itemprop="dateModified" datetime="2021-03-12T18:36:26+08:00">2021-03-12</time>
+              </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="Git的奇技淫巧-see-no-evil"><a href="#Git的奇技淫巧-see-no-evil" class="headerlink" title="Git的奇技淫巧:see_no_evil:"></a>Git的奇技淫巧<span class="github-emojis" style="color: transparent;background:no-repeat url(https://github.githubassets.com/images/icons/emoji/unicode/1f648.png?v8) center/contain" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f648.png?v8">🙈</span></h1><blockquote>
+<p>Git常用命令集合，Fork于<a target="_blank" rel="noopener" href="https://github.com/git-tips/tips">tips</a>项目</p>
+</blockquote>
+<p>Git是一个 “分布式版本管理工具”，简单的理解版本管理工具：大家在写东西的时候都用过 “回撤” 这个功能，但是回撤只能回撤几步，假如想要找回我三天之前的修改，光用 “回撤” 是找不回来的。而 “版本管理工具” 能记录每次的修改，只要提交到版本仓库，你就可以找到之前任何时刻的状态（文本状态）。</p>
+<p>下面的内容就是列举了常用的 Git 命令和一些小技巧，可以通过 “页面内查找” 的方式进行快速查询：<code>Ctrl/Command+f</code>。</p>
+<h2 id="开卷必读"><a href="#开卷必读" class="headerlink" title="开卷必读"></a>开卷必读</h2><p><em>如果之前未使用过 Git，可以学习 <a target="_blank" rel="noopener" href="http://rogerdudler.github.io/git-guide/index.zh.html">Git 小白教程</a>入门</em></p>
+<ol>
+<li><strong>一定要先测试命令的效果后</strong>，再用于工作环境中，以防造成不能弥补的后果！<strong>到时候别拿着砍刀来找我</strong></li>
+<li>所有的命令都在<code>git version 2.7.4 (Apple Git-66)</code>下测试通过</li>
+<li>统一概念：<ul>
+<li>工作区：改动（增删文件和内容）</li>
+<li>暂存区：输入命令：<code>git add 改动的文件名</code>，此次改动就放到了 ‘暂存区’</li>
+<li>本地仓库(简称：本地)：输入命令：<code>git commit 此次修改的描述</code>，此次改动就放到了 ’本地仓库’，每个 commit，我叫它为一个 ‘版本’。</li>
+<li>远程仓库(简称：远程)：输入命令：<code>git push 远程仓库</code>，此次改动就放到了 ‘远程仓库’（GitHub 等)</li>
+<li>commit-id：输出命令：<code>git log</code>，最上面那行 <code>commit xxxxxx</code>，后面的字符串就是 commit-id</li>
+</ul>
+</li>
+<li>如果喜欢这个项目，欢迎 Star、提交 Pr、<a target="_blank" rel="noopener" href="https://github.com/521xueweihan/git-tips/issues">反馈问题</a>😊</li>
+</ol>
+<h2 id="回到远程仓库的状态"><a href="#回到远程仓库的状态" class="headerlink" title="回到远程仓库的状态"></a>回到远程仓库的状态</h2><p>抛弃本地所有的修改，回到远程仓库的状态。</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git fetch --all &amp;&amp; git reset --hard origin/master</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="重设第一个-commit"><a href="#重设第一个-commit" class="headerlink" title="重设第一个 commit"></a>重设第一个 commit</h2><p>也就是把所有的改动都重新放回工作区，并<strong>清空所有的 commit</strong>，这样就可以重新提交第一个 commit 了</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git update-ref -d HEAD</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="展示工作区和暂存区的不同"><a href="#展示工作区和暂存区的不同" class="headerlink" title="展示工作区和暂存区的不同"></a>展示工作区和暂存区的不同</h2><p>输出<strong>工作区</strong>和<strong>暂存区</strong>的 different (不同)。</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git diff</span><br></pre></td></tr></tbody></table></figure>
+
+<p>还可以展示本地仓库中任意两个 commit 之间的文件变动：</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git diff &lt;commit-id&gt; &lt;commit-id&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="展示暂存区和最近版本的不同"><a href="#展示暂存区和最近版本的不同" class="headerlink" title="展示暂存区和最近版本的不同"></a>展示暂存区和最近版本的不同</h2><p>输出<strong>暂存区</strong>和本地最近的版本 (commit) 的 different (不同)。</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git diff --cached</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="展示暂存区、工作区和最近版本的不同"><a href="#展示暂存区、工作区和最近版本的不同" class="headerlink" title="展示暂存区、工作区和最近版本的不同"></a>展示暂存区、工作区和最近版本的不同</h2><p>输出<strong>工作区</strong>、<strong>暂存区</strong> 和本地最近的版本 (commit) 的 different (不同)。</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git diff HEAD</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="快速切换到上一个分支"><a href="#快速切换到上一个分支" class="headerlink" title="快速切换到上一个分支"></a>快速切换到上一个分支</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="删除已经合并到-master-的分支"><a href="#删除已经合并到-master-的分支" class="headerlink" title="删除已经合并到 master 的分支"></a>删除已经合并到 master 的分支</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch --merged master | grep -v <span class="string">'^\*\|  master'</span> | xargs -n 1 git branch -d</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="展示本地分支关联远程仓库的情况"><a href="#展示本地分支关联远程仓库的情况" class="headerlink" title="展示本地分支关联远程仓库的情况"></a>展示本地分支关联远程仓库的情况</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -vv</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="关联远程分支"><a href="#关联远程分支" class="headerlink" title="关联远程分支"></a>关联远程分支</h2><p>关联之后，<code>git branch -vv</code> 就可以展示关联的远程分支名了，同时推送到远程仓库直接：<code>git push</code>，不需要指定远程仓库了。</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -u origin/mybranch</span><br></pre></td></tr></tbody></table></figure>
+
+<p>或者在 push 时加上 <code>-u</code> 参数</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin/mybranch -u</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="列出所有远程分支"><a href="#列出所有远程分支" class="headerlink" title="列出所有远程分支"></a>列出所有远程分支</h2><p>-r 参数相当于：remote</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -r</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="列出本地和远程分支"><a href="#列出本地和远程分支" class="headerlink" title="列出本地和远程分支"></a>列出本地和远程分支</h2><p>-a 参数相当于：all</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -a</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="创建并切换到本地分支"><a href="#创建并切换到本地分支" class="headerlink" title="创建并切换到本地分支"></a>创建并切换到本地分支</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b &lt;branch-name&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="从远程分支中创建并切换到本地分支"><a href="#从远程分支中创建并切换到本地分支" class="headerlink" title="从远程分支中创建并切换到本地分支"></a>从远程分支中创建并切换到本地分支</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b &lt;branch-name&gt; origin/&lt;branch-name&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="删除本地分支"><a href="#删除本地分支" class="headerlink" title="删除本地分支"></a>删除本地分支</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -d &lt;local-branchname&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="删除远程分支"><a href="#删除远程分支" class="headerlink" title="删除远程分支"></a>删除远程分支</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin --delete &lt;remote-branchname&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>或者</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin :&lt;remote-branchname&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="重命名本地分支"><a href="#重命名本地分支" class="headerlink" title="重命名本地分支"></a>重命名本地分支</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -m &lt;new-branch-name&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="查看标签"><a href="#查看标签" class="headerlink" title="查看标签"></a>查看标签</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git tag</span><br></pre></td></tr></tbody></table></figure>
+<p>展示当前分支的最近的 tag</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git describe --tags --abbrev=0</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="查看标签详细信息"><a href="#查看标签详细信息" class="headerlink" title="查看标签详细信息"></a>查看标签详细信息</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git tag -ln</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="本地创建标签"><a href="#本地创建标签" class="headerlink" title="本地创建标签"></a>本地创建标签</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git tag &lt;version-number&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>默认 tag 是打在最近的一次 commit 上，如果需要指定 commit 打 tag：</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git tag -a &lt;version-number&gt; -m <span class="string">"v1.0 发布(描述)"</span> &lt;commit-id&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="推送标签到远程仓库"><a href="#推送标签到远程仓库" class="headerlink" title="推送标签到远程仓库"></a>推送标签到远程仓库</h2><p>首先要保证本地创建好了标签才可以推送标签到远程仓库：</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin &lt;local-version-number&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>一次性推送所有标签，同步到远程仓库：</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin --tags</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="删除本地标签"><a href="#删除本地标签" class="headerlink" title="删除本地标签"></a>删除本地标签</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git tag -d &lt;tag-name&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="删除远程标签"><a href="#删除远程标签" class="headerlink" title="删除远程标签"></a>删除远程标签</h2><p>删除远程标签需要<strong>先删除本地标签</strong>，再执行下面的命令：</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin :refs/tags/&lt;tag-name&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="切回到某个标签"><a href="#切回到某个标签" class="headerlink" title="切回到某个标签"></a>切回到某个标签</h2><p>一般上线之前都会打 tag，就是为了防止上线后出现问题，方便快速回退到上一版本。下面的命令是回到某一标签下的状态：</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout -b branch_name tag_name</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="放弃工作区的修改"><a href="#放弃工作区的修改" class="headerlink" title="放弃工作区的修改"></a>放弃工作区的修改</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout &lt;file-name&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<p>放弃所有修改：</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout .</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="恢复删除的文件"><a href="#恢复删除的文件" class="headerlink" title="恢复删除的文件"></a>恢复删除的文件</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git rev-list -n 1 HEAD -- &lt;file_path&gt; <span class="comment">#得到 deleting_commit</span></span><br><span class="line"></span><br><span class="line">git checkout &lt;deleting_commit&gt;^ -- &lt;file_path&gt; <span class="comment">#回到删除文件 deleting_commit 之前的状态</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="以新增一个-commit-的方式还原某一个-commit-的修改"><a href="#以新增一个-commit-的方式还原某一个-commit-的修改" class="headerlink" title="以新增一个 commit 的方式还原某一个 commit 的修改"></a>以新增一个 commit 的方式还原某一个 commit 的修改</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git revert &lt;commit-id&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="回到某个-commit-的状态，并删除后面的-commit"><a href="#回到某个-commit-的状态，并删除后面的-commit" class="headerlink" title="回到某个 commit 的状态，并删除后面的 commit"></a>回到某个 commit 的状态，并删除后面的 commit</h2><p>和 revert 的区别：reset 命令会抹去某个 commit id 之后的所有 commit</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">git reset &lt;commit-id&gt;  <span class="comment">#默认就是-mixed参数。</span></span><br><span class="line"></span><br><span class="line">git reset –mixed HEAD^  <span class="comment">#回退至上个版本，它将重置HEAD到另外一个commit,并且重置暂存区以便和HEAD相匹配，但是也到此为止。工作区不会被更改。</span></span><br><span class="line"></span><br><span class="line">git reset –soft HEAD~3  <span class="comment">#回退至三个版本之前，只回退了commit的信息，暂存区和工作区与回退之前保持一致。如果还要提交，直接commit即可 &nbsp;</span></span><br><span class="line"></span><br><span class="line">git reset –hard &lt;commit-id&gt;  <span class="comment">#彻底回退到指定commit-id的状态，暂存区和工作区也会变为指定commit-id版本的内容</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="修改上一个-commit-的描述"><a href="#修改上一个-commit-的描述" class="headerlink" title="修改上一个 commit 的描述"></a>修改上一个 commit 的描述</h2><p>如果暂存区有改动，同时也会将暂存区的改动提交到上一个 commit</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit --amend</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="查看-commit-历史"><a href="#查看-commit-历史" class="headerlink" title="查看 commit 历史"></a>查看 commit 历史</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">log</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="查看某段代码是谁写的"><a href="#查看某段代码是谁写的" class="headerlink" title="查看某段代码是谁写的"></a>查看某段代码是谁写的</h2><p>blame 的意思为‘责怪’，你懂的。</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git blame &lt;file-name&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="显示本地更新过-HEAD-的-git-命令记录"><a href="#显示本地更新过-HEAD-的-git-命令记录" class="headerlink" title="显示本地更新过 HEAD 的 git 命令记录"></a>显示本地更新过 HEAD 的 git 命令记录</h2><p>每次更新了 HEAD 的 git 命令比如 commint、amend、cherry-pick、reset、revert 等都会被记录下来（不限分支），就像 shell 的 history 一样。<br>这样你可以 reset 到任何一次更新了 HEAD 的操作之后，而不仅仅是回到当前分支下的某个 commit 之后的状态。</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reflog</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="修改作者名"><a href="#修改作者名" class="headerlink" title="修改作者名"></a>修改作者名</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git commit --amend --author=<span class="string">'Author Name &lt;email@address.com&gt;'</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="修改远程仓库的-url"><a href="#修改远程仓库的-url" class="headerlink" title="修改远程仓库的 url"></a>修改远程仓库的 url</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote set-url origin &lt;URL&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="增加远程仓库"><a href="#增加远程仓库" class="headerlink" title="增加远程仓库"></a>增加远程仓库</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin &lt;remote-url&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="列出所有远程仓库"><a href="#列出所有远程仓库" class="headerlink" title="列出所有远程仓库"></a>列出所有远程仓库</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="查看两个星期内的改动"><a href="#查看两个星期内的改动" class="headerlink" title="查看两个星期内的改动"></a>查看两个星期内的改动</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git whatchanged --since=<span class="string">'2 weeks ago'</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="把-A-分支的某一个-commit，放到-B-分支上"><a href="#把-A-分支的某一个-commit，放到-B-分支上" class="headerlink" title="把 A 分支的某一个 commit，放到 B 分支上"></a>把 A 分支的某一个 commit，放到 B 分支上</h2><p>这个过程需要 <code>cherry-pick</code> 命令，<a target="_blank" rel="noopener" href="http://sg552.iteye.com/blog/1300713#bc2367928">参考</a></p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout &lt;branch-name&gt; &amp;&amp; git cherry-pick &lt;commit-id&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="给-git-命令起别名"><a href="#给-git-命令起别名" class="headerlink" title="给 git 命令起别名"></a>给 git 命令起别名</h2><p>简化命令</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">git config --global <span class="built_in">alias</span>.&lt;handle&gt; &lt;<span class="built_in">command</span>&gt;</span><br><span class="line"></span><br><span class="line">比如：git status 改成 git st，这样可以简化命令</span><br><span class="line"></span><br><span class="line">git config --global alias.st status</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="存储当前的修改，但不用提交-commit"><a href="#存储当前的修改，但不用提交-commit" class="headerlink" title="存储当前的修改，但不用提交 commit"></a>存储当前的修改，但不用提交 commit</h2><p>详解可以参考<a target="_blank" rel="noopener" href="http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000/00137602359178794d966923e5c4134bc8bf98dfb03aea3000">廖雪峰老师的 git 教程</a></p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git stash</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="保存当前状态，包括-untracked-的文件"><a href="#保存当前状态，包括-untracked-的文件" class="headerlink" title="保存当前状态，包括 untracked 的文件"></a>保存当前状态，包括 untracked 的文件</h2><p>untracked 文件：新建的文件</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git stash -u</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="展示所有-stashes"><a href="#展示所有-stashes" class="headerlink" title="展示所有 stashes"></a>展示所有 stashes</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git stash list</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="回到某个-stash-的状态"><a href="#回到某个-stash-的状态" class="headerlink" title="回到某个 stash 的状态"></a>回到某个 stash 的状态</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git stash apply &lt;stash@{n}&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="回到最后一个-stash-的状态，并删除这个-stash"><a href="#回到最后一个-stash-的状态，并删除这个-stash" class="headerlink" title="回到最后一个 stash 的状态，并删除这个 stash"></a>回到最后一个 stash 的状态，并删除这个 stash</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git stash pop</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="删除所有的-stash"><a href="#删除所有的-stash" class="headerlink" title="删除所有的 stash"></a>删除所有的 stash</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git stash clear</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="从-stash-中拿出某个文件的修改"><a href="#从-stash-中拿出某个文件的修改" class="headerlink" title="从 stash 中拿出某个文件的修改"></a>从 stash 中拿出某个文件的修改</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout &lt;stash@{n}&gt; -- &lt;file-path&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="展示所有-tracked-的文件"><a href="#展示所有-tracked-的文件" class="headerlink" title="展示所有 tracked 的文件"></a>展示所有 tracked 的文件</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git ls-files -t</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="展示所有-untracked-的文件"><a href="#展示所有-untracked-的文件" class="headerlink" title="展示所有 untracked 的文件"></a>展示所有 untracked 的文件</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git ls-files --others</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="展示所有忽略的文件"><a href="#展示所有忽略的文件" class="headerlink" title="展示所有忽略的文件"></a>展示所有忽略的文件</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git ls-files --others -i --exclude-standard</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="强制删除-untracked-的文件"><a href="#强制删除-untracked-的文件" class="headerlink" title="强制删除 untracked 的文件"></a>强制删除 untracked 的文件</h2><p>可以用来删除新建的文件。如果不指定文件文件名，则清空所有工作的 untracked 文件。<code>clean</code> 命令，<strong>注意两点</strong>：</p>
+<ol>
+<li>clean 后，删除的文件无法找回</li>
+<li>不会影响 tracked 的文件的改动，只会删除 untracked 的文件</li>
+</ol>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clean &lt;file-name&gt; -f</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="强制删除-untracked-的目录"><a href="#强制删除-untracked-的目录" class="headerlink" title="强制删除 untracked 的目录"></a>强制删除 untracked 的目录</h2><p>可以用来删除新建的目录，<strong>注意</strong>:这个命令也可以用来删除 untracked 的文件。详情见上一条</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clean &lt;directory-name&gt; -df</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="展示简化的-commit-历史"><a href="#展示简化的-commit-历史" class="headerlink" title="展示简化的 commit 历史"></a>展示简化的 commit 历史</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">log</span> --pretty=oneline --graph --decorate --all</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="把某一个分支到导出成一个文件"><a href="#把某一个分支到导出成一个文件" class="headerlink" title="把某一个分支到导出成一个文件"></a>把某一个分支到导出成一个文件</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git bundle create &lt;file&gt; &lt;branch-name&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="从包中导入分支"><a href="#从包中导入分支" class="headerlink" title="从包中导入分支"></a>从包中导入分支</h2><p>新建一个分支，分支内容就是上面 <code>git bundle create</code> 命令导出的内容</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> repo.bundle &lt;repo-dir&gt; -b &lt;branch-name&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="执行-rebase-之前自动-stash"><a href="#执行-rebase-之前自动-stash" class="headerlink" title="执行 rebase 之前自动 stash"></a>执行 rebase 之前自动 stash</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git rebase --autostash</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="从远程仓库根据-ID，拉下某一状态，到本地分支"><a href="#从远程仓库根据-ID，拉下某一状态，到本地分支" class="headerlink" title="从远程仓库根据 ID，拉下某一状态，到本地分支"></a>从远程仓库根据 ID，拉下某一状态，到本地分支</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git fetch origin pull/&lt;id&gt;/head:&lt;branch-name&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="详细展示一行中的修改"><a href="#详细展示一行中的修改" class="headerlink" title="详细展示一行中的修改"></a>详细展示一行中的修改</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git diff --word-diff</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="清除-gitignore-文件中记录的文件"><a href="#清除-gitignore-文件中记录的文件" class="headerlink" title="清除 gitignore 文件中记录的文件"></a>清除 gitignore 文件中记录的文件</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git clean -X -f</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="展示所有-alias-和-configs"><a href="#展示所有-alias-和-configs" class="headerlink" title="展示所有 alias 和 configs"></a>展示所有 alias 和 configs</h2><p><strong>注意：</strong> config 分为：当前目录（local）和全局（golbal）的 config，默认为当前目录的 config</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --<span class="built_in">local</span> --list (当前目录)</span><br><span class="line">git config --global --list (全局)</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="展示忽略的文件"><a href="#展示忽略的文件" class="headerlink" title="展示忽略的文件"></a>展示忽略的文件</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git status --ignored</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="commit-历史中显示-Branch1-有的，但是-Branch2-没有-commit"><a href="#commit-历史中显示-Branch1-有的，但是-Branch2-没有-commit" class="headerlink" title="commit 历史中显示 Branch1 有的，但是 Branch2 没有 commit"></a>commit 历史中显示 Branch1 有的，但是 Branch2 没有 commit</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">log</span> Branch1 ^Branch2</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="在-commit-log-中显示-GPG-签名"><a href="#在-commit-log-中显示-GPG-签名" class="headerlink" title="在 commit log 中显示 GPG 签名"></a>在 commit log 中显示 GPG 签名</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">log</span> --show-signature</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="删除全局设置"><a href="#删除全局设置" class="headerlink" title="删除全局设置"></a>删除全局设置</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config --global --<span class="built_in">unset</span> &lt;entry-name&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="新建并切换到新分支上，同时这个分支没有任何-commit"><a href="#新建并切换到新分支上，同时这个分支没有任何-commit" class="headerlink" title="新建并切换到新分支上，同时这个分支没有任何 commit"></a>新建并切换到新分支上，同时这个分支没有任何 commit</h2><p>相当于保存修改，但是重写 commit 历史</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git checkout --orphan &lt;branch-name&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="展示任意分支某一文件的内容"><a href="#展示任意分支某一文件的内容" class="headerlink" title="展示任意分支某一文件的内容"></a>展示任意分支某一文件的内容</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git show &lt;branch-name&gt;:&lt;file-name&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="clone-下来指定的单一分支"><a href="#clone-下来指定的单一分支" class="headerlink" title="clone 下来指定的单一分支"></a>clone 下来指定的单一分支</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> -b &lt;branch-name&gt; --single-branch https://github.com/user/repo.git</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="忽略某个文件的改动"><a href="#忽略某个文件的改动" class="headerlink" title="忽略某个文件的改动"></a>忽略某个文件的改动</h2><p>关闭 track 指定文件的改动，也就是 Git 将不会在记录这个文件的改动</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git update-index --assume-unchanged path/to/file</span><br></pre></td></tr></tbody></table></figure>
+
+<p>恢复 track 指定文件的改动</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git update-index --no-assume-unchanged path/to/file</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="忽略文件的权限变化"><a href="#忽略文件的权限变化" class="headerlink" title="忽略文件的权限变化"></a>忽略文件的权限变化</h2><p>不再将文件的权限变化视作改动</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git config core.fileMode <span class="literal">false</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="以最后提交的顺序列出所有-Git-分支"><a href="#以最后提交的顺序列出所有-Git-分支" class="headerlink" title="以最后提交的顺序列出所有 Git 分支"></a>以最后提交的顺序列出所有 Git 分支</h2><p>最新的放在最上面</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git for-each-ref --sort=-committerdate --format=<span class="string">'%(refname:short)'</span> refs/heads/</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="在-commit-log-中查找相关内容"><a href="#在-commit-log-中查找相关内容" class="headerlink" title="在 commit log 中查找相关内容"></a>在 commit log 中查找相关内容</h2><p>通过 grep 查找，given-text：所需要查找的字段</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">log</span> --all --grep=<span class="string">'&lt;given-text&gt;'</span></span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="把暂存区的指定-file-放到工作区中"><a href="#把暂存区的指定-file-放到工作区中" class="headerlink" title="把暂存区的指定 file 放到工作区中"></a>把暂存区的指定 file 放到工作区中</h2><p>不添加参数，默认是 <code>-mixed</code></p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git reset &lt;file-name&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="强制推送"><a href="#强制推送" class="headerlink" title="强制推送"></a>强制推送</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push -f &lt;remote-name&gt; &lt;branch-name&gt;</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="一图详解"><a href="#一图详解" class="headerlink" title="一图详解"></a>一图详解</h2><p><img src="./assets/git.png" alt=""></p>
+<h2 id="优雅的提交Commit信息"><a href="#优雅的提交Commit信息" class="headerlink" title="优雅的提交Commit信息"></a>优雅的提交Commit信息</h2><p>使用<a target="_blank" rel="noopener" href="https://github.com/angular/angular.js/blob/master/DEVELOPERS.md#-git-commit-guidelines">Angular团队提交规范</a></p>
+<p>主要有以下组成</p>
+<ul>
+<li>标题行: 必填, 描述主要修改类型和内容</li>
+<li>主题内容: 描述为什么修改, 做了什么样的修改, 以及开发的思路等等</li>
+<li>页脚注释: 放 Breaking Changes 或 Closed Issues</li>
+</ul>
+<p>常用的修改项</p>
+<ul>
+<li>type: commit 的类型</li>
+<li>feat: 新特性</li>
+<li>fix: 修改问题</li>
+<li>refactor: 代码重构</li>
+<li>docs: 文档修改</li>
+<li>style: 代码格式修改, 注意不是 css 修改</li>
+<li>test: 测试用例修改</li>
+<li>chore: 其他修改, 比如构建流程, 依赖管理.</li>
+<li>scope: commit 影响的范围, 比如: route, component, utils, build…</li>
+<li>subject: commit 的概述</li>
+<li>body: commit 具体修改内容, 可以分为多行</li>
+<li>footer: 一些备注, 通常是 BREAKING CHANGE 或修复的 bug 的链接.</li>
+</ul>
+<h3 id="使用Commitizen代替-git-commit"><a href="#使用Commitizen代替-git-commit" class="headerlink" title="使用Commitizen代替 git commit"></a>使用<code>Commitizen</code>代替 git commit</h3><p>可以使用<a target="_blank" rel="noopener" href="https://github.com/commitizen/cz-cli">cz-cli</a>工具代替 <code>git commit</code></p>
+<p>全局安装</p>
+<figure class="highlight shell"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install -g commitizen cz-conventional-changelog</span><br><span class="line"></span><br><span class="line">echo '{ "path": "cz-conventional-changelog" }' &gt; ~/.czrc</span><br></pre></td></tr></tbody></table></figure>
+<p>全局安装后使用 <code>git cz</code> 代替 <code>git commit</code>就可以了,如下图</p>
+<p><img src="./assets/gitcz.png" alt=""></p>
+<h2 id="联系我"><a href="#联系我" class="headerlink" title="联系我"></a>联系我</h2><ul>
+<li>博客园：<a target="_blank" rel="noopener" href="http://www.cnblogs.com/xueweihan/">削微寒</a></li>
+<li>或者直接提 Pr，Issues</li>
+</ul>
+<p><strong><a href="#目录">⬆ 返回顶部</a></strong></p>
+<script>
+        document.querySelectorAll('.github-emojis')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://toyourheart163.github.io/2019/12/17/django-drf-extensions/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="toyourheart163">
+      <meta itemprop="description" content="提升思维能力 普及常识 谈点技术">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="麦可乐的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/12/17/django-drf-extensions/" class="post-title-link" itemprop="url">django-rest-framework-extensions</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-12-17 10:21:51" itemprop="dateCreated datePublished" datetime="2019-12-17T10:21:51+08:00">2019-12-17</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-12 18:36:26" itemprop="dateModified" datetime="2021-03-12T18:36:26+08:00">2021-03-12</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="API搜索过滤问题"><a href="#API搜索过滤问题" class="headerlink" title="API搜索过滤问题"></a>API搜索过滤问题</h2><p>用rest_framework 搜索的时候只有包含的选项, 无法排除关键字, 用django里的filter又要改写别的东西，于是到rest_framework文档查询到了<a target="_blank" rel="noopener" href="https://github.com/miki725/django-url-filter">django-url-filter</a><br><strong>如果能做到像twitter那样排除使用<code>- csdn</code>就好了</strong></p>
+<h3 id="rest-framework-的搜索能力"><a href="#rest-framework-的搜索能力" class="headerlink" title="rest_framework 的搜索能力"></a>rest_framework 的搜索能力</h3><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">'^': 'istartswith',</span><br><span class="line">'=': 'iexact',</span><br><span class="line">'@': 'search',</span><br><span class="line">'$': 'iregex',</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="django-url-filter使用方法"><a href="#django-url-filter使用方法" class="headerlink" title="django-url-filter使用方法"></a>django-url-filter使用方法</h3><p>在settings.py里配置, 以及viewset要配置</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># setting.py</span><br><span class="line">'DEFAULT_FILTER_BACKENDS': [</span><br><span class="line">    'url_filter.integrations.drf.DjangoFilterBackend',</span><br><span class="line">]</span><br></pre></td></tr></tbody></table></figure>
+
+<p>需要添加<code>filter_fields = '__all__'</code>才能使用</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"># viewsets.py</span><br><span class="line">class BlogViewSet(ModelViewSet):</span><br><span class="line">    ...</span><br><span class="line">    filter_fields = '__all__'</span><br></pre></td></tr></tbody></table></figure>
+
+<h3 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h3><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"># get user with id 5</span><br><span class="line">example.com/users/?id=5</span><br><span class="line"></span><br><span class="line"># get user with id either 5, 10 or 15</span><br><span class="line">example.com/users/?id__in=5,10,15</span><br><span class="line"></span><br><span class="line"># get user with id between 5 and 10</span><br><span class="line">example.com/users/?id__range=5,10</span><br><span class="line"></span><br><span class="line"># get user with username "foo"</span><br><span class="line">example.com/users/?username=foo</span><br><span class="line"></span><br><span class="line"># get user with username containing case insensitive "foo"</span><br><span class="line">example.com/users/?username__icontains=foo</span><br><span class="line"></span><br><span class="line"># get user where username does NOT contain "foo"</span><br><span class="line">example.com/users/?username__icontains!=foo</span><br><span class="line"></span><br><span class="line"># get user who joined in 2015 as per user profile</span><br><span class="line">example.com/users/?profile__joined__year=2015</span><br><span class="line"></span><br><span class="line"># get user who joined in between 2010 and 2015 as per user profile</span><br><span class="line">example.com/users/?profile__joined__range=2010-01-01,2015-12-31</span><br><span class="line"></span><br><span class="line"># get user who joined in after 2010 as per user profile</span><br><span class="line">example.com/users/?profile__joined__gt=2010-01-01</span><br></pre></td></tr></tbody></table></figure>
+<script>
+        document.querySelectorAll('.github-emojis')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://toyourheart163.github.io/2019/12/15/vue-admin-template/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="toyourheart163">
+      <meta itemprop="description" content="提升思维能力 普及常识 谈点技术">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="麦可乐的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/12/15/vue-admin-template/" class="post-title-link" itemprop="url">vue-admin-template</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-12-16 00:27:04" itemprop="dateCreated datePublished" datetime="2019-12-16T00:27:04+08:00">2019-12-16</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-12 18:36:26" itemprop="dateModified" datetime="2021-03-12T18:36:26+08:00">2021-03-12</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/IT/" itemprop="url" rel="index"><span itemprop="name">IT</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="由于vue-element-admin加载太久"><a href="#由于vue-element-admin加载太久" class="headerlink" title="由于vue-element-admin加载太久"></a>由于vue-element-admin加载太久</h1><p>更换成vue-admin-template</p>
+<h2 id="记录vue-admin-template使用问题"><a href="#记录vue-admin-template使用问题" class="headerlink" title="记录vue-admin-template使用问题"></a>记录vue-admin-template使用问题</h2><p>如果路由不加#号，就要重新登陆</p>
+<blockquote>
+<p>改写了后台登陆，不用重新登陆了. 不明白每次都要从后台获取用户信息。还要再改。2019-12-23</p>
+</blockquote>
+<h2 id="我想重用vue-admin-template，于是使用了cp-r-vue-admin-template-vadmin"><a href="#我想重用vue-admin-template，于是使用了cp-r-vue-admin-template-vadmin" class="headerlink" title="我想重用vue-admin-template，于是使用了cp -r vue-admin-template vadmin"></a>我想重用vue-admin-template，于是使用了<code>cp -r vue-admin-template vadmin</code></h2><blockquote>
+<p>写于：2019-12-24</p>
+</blockquote>
+<p>跳到<a href="#可行方案">可行方案</a><br>复制后得到提示.</p>
+<h3 id="错误提示1"><a href="#错误提示1" class="headerlink" title="错误提示1"></a>错误提示1</h3><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cp: vue-admin-template/node_modules/.bin/not-in-publish: No such file or directory</span><br><span class="line">...</span><br></pre></td></tr></tbody></table></figure>
+
+<p>为什么会这样?</p>
+<p>运行<code>cd vadmin &amp; npm run dev</code></p>
+<p>然后得到下面的错误</p>
+<h3 id="错误提示2"><a href="#错误提示2" class="headerlink" title="错误提示2"></a>错误提示2</h3><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">...</span><br><span class="line">internal/modules/cjs/loader.js:775</span><br><span class="line">    throw err;</span><br><span class="line">    ^</span><br><span class="line"></span><br><span class="line">Error: Cannot find module <span class="string">'../package.json'</span></span><br><span class="line">Require stack:</span><br><span class="line">...</span><br><span class="line">sh: vue-cli-service: <span class="built_in">command</span> not found</span><br><span class="line">npm ERR! code ELIFECYCLE</span><br><span class="line">npm ERR! syscall spawn</span><br><span class="line">npm ERR! file sh</span><br><span class="line">npm ERR! errno ENOENT</span><br><span class="line">npm ERR! vue-element-admin@4.2.1 dev: `vue-cli-service serve`</span><br><span class="line">npm ERR! spawn ENOENT</span><br><span class="line">npm ERR!</span><br><span class="line">npm ERR! Failed at the vue-element-admin@4.2.1 dev script.</span><br><span class="line">npm ERR! This is probably not a problem with npm. There is likely additional logging output above.</span><br><span class="line">...</span><br></pre></td></tr></tbody></table></figure>
+
+<p>我就删除掉node_modules，从别的项目复制node_modules，也不行</p>
+<p>于是上网找答案</p>
+<p>只要</p>
+<ol>
+<li><code>rm -r node_modules</code></li>
+<li><code>npm i</code></li>
+</ol>
+<p>但是这需要重新联网下载，而且我的手机流量只有几个G，于是我又找了npm离线安装方法</p>
+<h3 id="处理方法"><a href="#处理方法" class="headerlink" title="处理方法"></a>处理方法</h3><h4 id="第一类，Registry-代理。"><a href="#第一类，Registry-代理。" class="headerlink" title="第一类，Registry 代理。"></a>第一类，Registry 代理。</h4><h4 id="第二类，npm-install替代。"><a href="#第二类，npm-install替代。" class="headerlink" title="第二类，npm install替代。"></a>第二类，npm install替代。</h4><p>上面离线安装方法全部失败。<br>不小心直接<code>npm i</code>浪费了很多流量，第三种都不想试了</p>
+<h4 id="第三类离线安装方法，node-modules作为缓存目录。"><a href="#第三类离线安装方法，node-modules作为缓存目录。" class="headerlink" title="第三类离线安装方法，node_modules作为缓存目录。"></a>第三类离线安装方法，node_modules作为缓存目录。</h4><p>这个方案的思路是，不使用.npm缓存，而是使用项目的node_modules目录作为缓存。</p>
+<pre><code>Freight
+npmbox</code></pre><p>跳过。。。</p>
+<p>试了下<code>npm install -offline</code> &amp; <code>yarn install -offline</code>都无法解决</p>
+<p>于是又去看vue-cli文档，没什么，又去看webpack的文档，也没有答案。</p>
+<p>折腾了一天。</p>
+<p>然后又看了看 <a href="#错误提示1">错误提示1</a><br>感觉是不是复制出了问题。然后看了看文件创建时间，是<strong>今天</strong>!!!</p>
+<p>diff 一下看看有什么不同</p>
+<p><code>diff vadmin vue-admin-template</code></p>
+<p>找不到有什么不同:(</p>
+<h4 id="可行方案"><a href="#可行方案" class="headerlink" title="可行方案"></a>可行方案</h4><p>想到之前学到的netcat, 试着用netcat完整拷贝文件</p>
+<p>终端窗口1，接收文件</p>
+<ol>
+<li><code>nc -l 6666 | tar -zxvf -</code></li>
+</ol>
+<p>终端窗口2，发送文件</p>
+<ol>
+<li><code>tar -zcvf - vue-admin-template | pv | nc localhost 6666</code></li>
+</ol>
+<blockquote>
+<p>中间的<code>| pv |</code> 用来看复制进度的, 好像要安装一个软件来的，如果没有可以删除</p>
+</blockquote>
+<p>终端窗口1</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> vue-admin-template</span><br><span class="line">npm run dev</span><br></pre></td></tr></tbody></table></figure>
+
+<p><span class="github-emojis" style="color: transparent;background:no-repeat url(https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8) center/contain" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8">😄</span>终于成功了</p>
+<p>我想我可以自己做一个npm离线安装:)</p>
+<p>又试着只拷贝node_modules文件夹，It work.</p>
+<blockquote>
+<p>写着这篇的时候，VS Code 又在后台自动下载了，我明明已经关了。又不见了我100M的流量</p>
+</blockquote>
+<h3 id="如果忘记url组成可以在浏览器的控制台输入location"><a href="#如果忘记url组成可以在浏览器的控制台输入location" class="headerlink" title="如果忘记url组成可以在浏览器的控制台输入location"></a>如果忘记url组成可以在浏览器的控制台输入<code>location</code></h3><h2 id="更新日志"><a href="#更新日志" class="headerlink" title="更新日志"></a>更新日志</h2><h3 id="2019-12-23"><a href="#2019-12-23" class="headerlink" title="2019-12-23"></a>2019-12-23</h3><h4 id="写了博客Timeline"><a href="#写了博客Timeline" class="headerlink" title="写了博客Timeline"></a>写了博客Timeline</h4><h4 id="修改点击tag标签转到对应的Timeline"><a href="#修改点击tag标签转到对应的Timeline" class="headerlink" title="修改点击tag标签转到对应的Timeline"></a>修改点击tag标签转到对应的Timeline</h4><h4 id="增加三层评论"><a href="#增加三层评论" class="headerlink" title="增加三层评论"></a>增加三层评论</h4><h4 id="博客页面增加全屏功能"><a href="#博客页面增加全屏功能" class="headerlink" title="博客页面增加全屏功能"></a>博客页面增加全屏功能</h4><h3 id="2019-12-24"><a href="#2019-12-24" class="headerlink" title="2019-12-24"></a>2019-12-24</h3><h4 id="去掉与博客不相关的组件与路由"><a href="#去掉与博客不相关的组件与路由" class="headerlink" title="去掉与博客不相关的组件与路由"></a>去掉与博客不相关的组件与路由</h4><h3 id="2019-12-27"><a href="#2019-12-27" class="headerlink" title="2019-12-27"></a>2019-12-27</h3><h4 id="deploy-to-heroku"><a href="#deploy-to-heroku" class="headerlink" title="deploy to heroku"></a>deploy to heroku</h4><h3 id="2019-12-30"><a href="#2019-12-30" class="headerlink" title="2019-12-30"></a>2019-12-30</h3><h4 id="feature-add-github-corner"><a href="#feature-add-github-corner" class="headerlink" title="feature: add github corner"></a>feature: add github corner</h4><script>
+        document.querySelectorAll('.github-emojis')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://toyourheart163.github.io/2019/12/15/shortcut/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="toyourheart163">
+      <meta itemprop="description" content="提升思维能力 普及常识 谈点技术">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="麦可乐的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/12/15/shortcut/" class="post-title-link" itemprop="url">shortcut</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-12-15 12:30:33" itemprop="dateCreated datePublished" datetime="2019-12-15T12:30:33+08:00">2019-12-15</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-12 18:36:26" itemprop="dateModified" datetime="2021-03-12T18:36:26+08:00">2021-03-12</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tools/" itemprop="url" rel="index"><span itemprop="name">tools</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="在iTerm里分割面板后，切换面板老是要离开键盘，有点累"><a href="#在iTerm里分割面板后，切换面板老是要离开键盘，有点累" class="headerlink" title="在iTerm里分割面板后，切换面板老是要离开键盘，有点累"></a>在iTerm里分割面板后，切换面板老是要离开键盘，有点累</h2><p>记录一下没有操作过的快捷键</p>
+<h3 id="光标控制"><a href="#光标控制" class="headerlink" title="光标控制"></a>光标控制</h3><ul>
+<li>ctrl + r: 搜索命令历史</li>
+<li>ctrl + h: 删除之前的字符</li>
+<li>ctrl + w: 删除光标前的单词</li>
+</ul>
+<h3 id="窗口操作"><a href="#窗口操作" class="headerlink" title="窗口操作"></a>窗口操作</h3><ul>
+<li>option + command + 1：进入窗口 1</li>
+</ul>
+<h3 id="标签页操作"><a href="#标签页操作" class="headerlink" title="标签页操作"></a>标签页操作</h3><p>标签页: Option + Command + E（将标签页打撒到全屏，并可以全局搜索所有的标签页）</p>
+<h3 id="面板（Pane）操作"><a href="#面板（Pane）操作" class="headerlink" title="面板（Pane）操作"></a>面板（Pane）操作</h3><ul>
+<li>前一个面板: Command + [</li>
+<li>后一个面板: Command + ]</li>
+<li>切换到上/下/左/右面板: Option + Command + 上下左右方向键</li>
+<li>使已切割的面板全屏：shift + Command + Enter</li>
+</ul>
+<h3 id="位置书签"><a href="#位置书签" class="headerlink" title="位置书签"></a>位置书签</h3><p>在当前会话中按Command + Shift + m可以保存当前位置，之后可以按Command + Shift + j跳回这个位置。</p>
+<h3 id="粘贴历史"><a href="#粘贴历史" class="headerlink" title="粘贴历史"></a>粘贴历史</h3><p>使用Command + Shift + h 可以呼出粘贴历史，支持模糊检索。还可以设置将粘贴历史保存在磁盘上（Preferences -&gt; General）</p>
+<h3 id="即时回放"><a href="#即时回放" class="headerlink" title="即时回放"></a>即时回放</h3><p>使用Command + Opt + b 打开即时回放，按Esc退出。即时回放可以记录终端输出的状态，让你“穿越时间”查看终端内容。默认每个会话最多储存4MB的内容，可以在设置中更改（Preferences -&gt; Genernal -&gt; Instant Replay）。</p>
+<h3 id="管理密码"><a href="#管理密码" class="headerlink" title="管理密码"></a>管理密码</h3><p>Opt + command + F</p>
+<script>
+        document.querySelectorAll('.github-emojis')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://toyourheart163.github.io/2019/12/09/work-arena/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="toyourheart163">
+      <meta itemprop="description" content="提升思维能力 普及常识 谈点技术">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="麦可乐的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/12/09/work-arena/" class="post-title-link" itemprop="url">职场：招聘 激励 管理</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-12-09 08:39:15" itemprop="dateCreated datePublished" datetime="2019-12-09T08:39:15+08:00">2019-12-09</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-12 18:36:26" itemprop="dateModified" datetime="2021-03-12T18:36:26+08:00">2021-03-12</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/manage/" itemprop="url" rel="index"><span itemprop="name">manage</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="什么是二八原理"><a href="#什么是二八原理" class="headerlink" title="什么是二八原理"></a>什么是二八原理</h2><blockquote>
+<p>20% 的原因导致了 80% 的结果；而其它 80% 的原因只产生 20% 的结果。</p>
+</blockquote>
+<h2 id="员工分类"><a href="#员工分类" class="headerlink" title="员工分类"></a>员工分类</h2><p>按照二八原理，优秀的员工在整个行业中大约占5%-20%；同理，糟糕的员工也大约占类似的比例。剩下那60%-90%的员工，我们称之为平庸的员工（说好听点叫普通的员工）。呈正态分布。</p>
+<h2 id="关于招聘"><a href="#关于招聘" class="headerlink" title="关于招聘"></a>关于招聘</h2><p><strong>招聘工作是其它各项管理工作的源头（先得有人可管才能谈管理嘛）</strong></p>
+<h3 id="比例"><a href="#比例" class="headerlink" title="比例"></a>比例</h3><p>优秀员工的稀缺（只占 5%~20%）。如果你指望团队里所有人都是优秀员工，那你就会陷入完美主义的焦油坑。</p>
+<h3 id="顺序"><a href="#顺序" class="headerlink" title="顺序"></a>顺序</h3><p>一定要先把优秀的人搞到手，再去招平庸的人。【这个顺序很重要】。</p>
+<h3 id="如何找到优秀人才"><a href="#如何找到优秀人才" class="headerlink" title="如何找到优秀人才"></a>如何找到优秀人才</h3><ol>
+<li>朋友/熟人介绍</li>
+<li>网上社区</li>
+<li>挖墙角</li>
+</ol>
+<h2 id="激励"><a href="#激励" class="headerlink" title="激励"></a>激励</h2><h3 id="激励的目的"><a href="#激励的目的" class="headerlink" title="激励的目的"></a>激励的目的</h3><p>知识密集型工作者，他们的产出是无形的，无法像劳动密集型那样记件。</p>
+<p>有效的激励措施是双赢的。企业与员工都有好处。</p>
+<h3 id="激励的对象"><a href="#激励的对象" class="headerlink" title="激励的对象"></a>激励的对象</h3><p>80%优秀员工，20%普通员工，糟糕员工就省省。</p>
+<h3 id="激励的方法"><a href="#激励的方法" class="headerlink" title="激励的方法"></a>激励的方法</h3><p>常用的激励方式，大致有：经济利益、名誉、成就感、尊重、权力、个人能力。</p>
+<h4 id="经济利益"><a href="#经济利益" class="headerlink" title="经济利益"></a>经济利益</h4><p>面试时就打听薪水等。</p>
+<h4 id="名誉"><a href="#名誉" class="headerlink" title="名誉"></a>名誉</h4><p>喜欢被公开表扬</p>
+<h4 id="成就感"><a href="#成就感" class="headerlink" title="成就感"></a>成就感</h4><p>喜欢做有挑战性的事，完成后有成就感。虚荣心。</p>
+<h4 id="尊重"><a href="#尊重" class="headerlink" title="尊重"></a>尊重</h4><p>如果你戳中了别人的自尊，就知道了。</p>
+<h4 id="权力"><a href="#权力" class="headerlink" title="权力"></a>权力</h4><p>不要乱给权力</p>
+<h4 id="个人能力"><a href="#个人能力" class="headerlink" title="个人能力"></a>个人能力</h4><p>培训机会等。</p>
+<h4 id="认同感、归属感"><a href="#认同感、归属感" class="headerlink" title="认同感、归属感"></a>认同感、归属感</h4><p>参照海底捞。</p>
+<h3 id="激励方式总结"><a href="#激励方式总结" class="headerlink" title="激励方式总结"></a>激励方式总结</h3><p>80% 左右的员工是偏感性的，心理学层面的激励对感性的人挺有效果。</p>
+<script>
+        document.querySelectorAll('.github-emojis')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://toyourheart163.github.io/2019/12/02/add-flowchart-js-to-blog/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="toyourheart163">
+      <meta itemprop="description" content="提升思维能力 普及常识 谈点技术">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="麦可乐的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/12/02/add-flowchart-js-to-blog/" class="post-title-link" itemprop="url">博客添加flowchart.js流程图功能</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-12-03 02:02:29" itemprop="dateCreated datePublished" datetime="2019-12-03T02:02:29+08:00">2019-12-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-12 18:36:26" itemprop="dateModified" datetime="2021-03-12T18:36:26+08:00">2021-03-12</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tools/" itemprop="url" rel="index"><span itemprop="name">tools</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="添加流程图功能"><a href="#添加流程图功能" class="headerlink" title="添加流程图功能"></a>添加流程图功能</h2><p><a target="_blank" rel="noopener" href="https://github.com/bubkoo/hexo-filter-flowchart">flowchart</a></p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -s hexo-filter-flowchart</span><br></pre></td></tr></tbody></table></figure>
+
+<p>st是变量名，-&gt;是指向</p>
+<h2 id="代码块后缀是flow"><a href="#代码块后缀是flow" class="headerlink" title="代码块后缀是flow"></a>代码块后缀是flow</h2><p><kbd>`</kbd><kbd>`</kbd><kbd>`</kbd>flow</p>
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">\`\``flow <span class="comment"># 太难了</span></span><br><span class="line">st=&gt;start: Start|past:&gt;http://toyourheart163.github.io[blank]</span><br><span class="line">e=&gt;end: down:&gt;http://localhost:4000</span><br><span class="line">op1=&gt;operation: learn flowchart</span><br><span class="line"></span><br><span class="line">st-&gt;op1-&gt;e</span><br><span class="line">```</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="效果展示"><a href="#效果展示" class="headerlink" title="效果展示"></a>效果展示</h2><div id="flowchart-0" class="flow-chart"></div>
+
+<h2 id="似乎这个库对flow的解析还不够好，无法展示flow的代码块"><a href="#似乎这个库对flow的解析还不够好，无法展示flow的代码块" class="headerlink" title="似乎这个库对flow的解析还不够好，无法展示flow的代码块"></a>似乎这个库对flow的解析还不够好，无法展示flow的代码块</h2><h3 id="python代码块示例"><a href="#python代码块示例" class="headerlink" title="python代码块示例"></a>python代码块示例</h3><p>```python<br>1+2<br>```</p>
+<h3 id="示例2"><a href="#示例2" class="headerlink" title="示例2"></a>示例2</h3><figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">```python</span><br><span class="line">import this</span><br><span class="line">```</span><br></pre></td></tr></tbody></table></figure>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/flowchart/1.6.5/flowchart.min.js"></script><textarea id="flowchart-0-code" style="display: none"># too hard to show.
+st=&gt;start: Start|past:&gt;http://toyourheart163.github.io[blank]
+e=&gt;end: down:&gt;http://localhost:4000
+op1=&gt;operation: learn flowchart
+
+st-&gt;op1-&gt;e</textarea><textarea id="flowchart-0-options" style="display: none">{"scale":1,"line-width":2,"line-length":50,"text-margin":10,"font-size":12}</textarea><script>  var code = document.getElementById("flowchart-0-code").value;  var options = JSON.parse(decodeURIComponent(document.getElementById("flowchart-0-options").value));  var diagram = flowchart.parse(code);  diagram.drawSVG("flowchart-0", options);</script><script>
+        document.querySelectorAll('.github-emojis')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://toyourheart163.github.io/2019/12/02/vim%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="toyourheart163">
+      <meta itemprop="description" content="提升思维能力 普及常识 谈点技术">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="麦可乐的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/12/02/vim%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE/" class="post-title-link" itemprop="url">vim思维导图</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-12-02 19:45:17" itemprop="dateCreated datePublished" datetime="2019-12-02T19:45:17+08:00">2019-12-02</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-12 18:36:26" itemprop="dateModified" datetime="2021-03-12T18:36:26+08:00">2021-03-12</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tools/" itemprop="url" rel="index"><span itemprop="name">tools</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="自带的教程"><a href="#自带的教程" class="headerlink" title="自带的教程"></a>自带的教程</h2><figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vimtutor</span><br></pre></td></tr></tbody></table></figure>
+
+<figure class="highlight sh"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ctrl+w ctrl+w <span class="comment"># 切换窗口</span></span><br></pre></td></tr></tbody></table></figure>
+
+<p><img src="/images/vim-mind.jpg" alt="vim mind"></p>
+<blockquote>
+<p>图片来自csdn</p>
+</blockquote>
+<script>
+        document.querySelectorAll('.github-emojis')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://toyourheart163.github.io/2019/11/20/github-emojis/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="toyourheart163">
+      <meta itemprop="description" content="提升思维能力 普及常识 谈点技术">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="麦可乐的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/11/20/github-emojis/" class="post-title-link" itemprop="url">github emojis</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-11-21 03:09:24" itemprop="dateCreated datePublished" datetime="2019-11-21T03:09:24+08:00">2019-11-21</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-12 18:36:26" itemprop="dateModified" datetime="2021-03-12T18:36:26+08:00">2021-03-12</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/emojis/" itemprop="url" rel="index"><span itemprop="name">emojis</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><p><span class="github-emojis" style="color: transparent;background:no-repeat url(https://github.githubassets.com/images/icons/emoji/unicode/1f4af.png?v8) center/contain" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4af.png?v8">💯</span><span class="github-emojis" style="color: transparent;background:no-repeat url(https://github.githubassets.com/images/icons/emoji/unicode/1f4af.png?v8) center/contain" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f4af.png?v8">💯</span><br><span class="github-emojis" style="color: transparent;background:no-repeat url(https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8) center/contain" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8">😄</span></p>
+<p><strong>由于加载太多图标会使网页变卡</strong> 那就只展示几个</p>
+<figure class="highlight plain"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">:100::100: :1234: :+1: :-1: :1st_place_medal: :2nd_place_medal: :3rd_place_medal: :8ball: :a: :ab: :abc: :abcd: :accept: :aerial_tramway: :afghanistan: :airplane: :aland_islands: :alarm_clock: :albania: :alembic: :algeria: :alien: :ambulance: :american_samoa: :amphora: :anchor: :andorra: :angel: :anger: :angola: :angry: :anguilla: :anguished: :ant: :antarctica: :antigua_barbuda: :apple: :aquarius: :argentina: :aries: :armenia: :arrow_backward: :arrow_double_down: :arrow_double_up: :arrow_down: :arrow_down_small: :arrow_forward: :arrow_heading_down: :arrow_heading_up: :arrow_left: :arrow_lower_left: :arrow_lower_right: :arrow_right: :arrow_right_hook: :arrow_up: :arrow_up_down: :arrow_up_small: :arrow_upper_left: :arrow_upper_right: :arrows_clockwise: :arrows_counterclockwise: :art: :articulated_lorry: :artificial_satellite: :aruba: :asterisk: :astonished: :athletic_shoe: :atm: :atom: :atom_symbol: :australia: :austria: :avocado: :azerbaijan: :b: :baby: :baby_bottle: :baby_chick: :baby_symbol: :back: :bacon: :badminton: :baggage_claim: :baguette_bread: :bahamas: :bahrain: :balance_scale: :balloon: :ballot_box: :ballot_box_with_check: :bamboo: :banana: :bangbang: :bangladesh: :bank: :bar_chart: :barbados: :barber: :baseball: :basecamp: :basecampy: :basketball: :basketball_man: :basketball_woman: :bat: :bath: :bathtub: :battery: :beach_umbrella: :bear: :bed: :bee: :beer: :beers: :beetle: :beginner: :belarus: :belgium: :belize: :bell: :bellhop_bell: :benin: :bento: :bermuda: :bhutan: :bicyclist: :bike: :biking_man: :biking_woman: :bikini: :biohazard: :bird: :birthday: :black_circle: :black_flag: :black_heart: :black_joker: :black_large_square: :black_medium_small_square: :black_medium_square: :black_nib: :black_small_square: :black_square_button: :blonde_man: :blonde_woman: :blossom: :blowfish: :blue_book: :blue_car: :blue_heart: :blush: :boar: :boat: :bolivia: :bomb: :book: :bookmark: :bookmark_tabs: :books: :boom: :boot: :bosnia_herzegovina: :botswana: :bouquet: :bow: :bow_and_arrow: :bowing_man: :bowing_woman: :bowling: :bowtie: :boxing_glove: :boy: :brazil: :bread: :bride_with_veil: :bridge_at_night: :briefcase: :british_indian_ocean_territory: :british_virgin_islands: :broken_heart: :brunei: :bug: :building_construction: :bulb: :bulgaria: :bullettrain_front: :bullettrain_side: :burkina_faso: :burrito: :burundi: :bus: :business_suit_levitating: :busstop: :bust_in_silhouette: :busts_in_silhouette: :butterfly: :cactus: :cake: :calendar: :call_me_hand: :calling: :cambodia: :camel: :camera: :camera_flash: :cameroon: :camping: :canada: :canary_islands: :cancer: :candle: :candy: :canoe: :cape_verde: :capital_abcd: :capricorn: :car: :card_file_box: :card_index: :card_index_dividers: :caribbean_netherlands: :carousel_horse: :carrot: :cat: :cat2: :cayman_islands: :cd: :central_african_republic: :chad: :chains: :champagne: :chart: :chart_with_downwards_trend: :chart_with_upwards_trend: :checkered_flag: :cheese: :cherries: :cherry_blossom: :chestnut: :chicken: :children_crossing: :chile: :chipmunk: :chocolate_bar: :christmas_island: :christmas_tree: :church: :cinema: :circus_tent: :city_sunrise: :city_sunset: :cityscape: :cl: :clamp: :clap: :clapper: :classical_building: :clinking_glasses: :clipboard: :clock1: :clock10: :clock1030: :clock11: :clock1130: :clock12: :clock1230: :clock130: :clock2: :clock230: :clock3: :clock330: :clock4: :clock430: :clock5: :clock530: :clock6: :clock630: :clock7: :clock730: :clock8: :clock830: :clock9: :clock930: :closed_book: :closed_lock_with_key: :closed_umbrella: :cloud: :cloud_with_lightning: :cloud_with_lightning_and_rain: :cloud_with_rain: :cloud_with_snow: :clown_face: :clubs: :cn: :cocktail: :cocos_islands: :coffee: :coffin: :cold_sweat: :collision: :colombia: :comet: :comoros: :computer: :computer_mouse: :confetti_ball: :confounded: :confused: :congo_brazzaville: :congo_kinshasa: :congratulations: :construction: :construction_worker: :construction_worker_man: :construction_worker_woman: :control_knobs: :convenience_store: :cook_islands: :cookie: :cool: :cop: :copyright: :corn: :costa_rica: :cote_divoire: :couch_and_lamp: :couple: :couple_with_heart: :couple_with_heart_man_man: :couple_with_heart_woman_man: :couple_with_heart_woman_woman: :couplekiss_man_man: :couplekiss_man_woman: :couplekiss_woman_woman: :cow: :cow2: :cowboy_hat_face: :crab: :crayon: :credit_card: :crescent_moon: :cricket: :croatia: :crocodile: :croissant: :crossed_fingers: :crossed_flags: :crossed_swords: :crown: :cry: :crying_cat_face: :crystal_ball: :cuba: :cucumber: :cupid: :curacao: :curly_loop: :currency_exchange: :curry: :custard: :customs: :cyclone: :cyprus: :czech_republic: :dagger: :dancer: :dancers: :dancing_men: :dancing_women: :dango: :dark_sunglasses: :dart: :dash: :date: :de: :deciduous_tree: :deer: :denmark: :department_store: :derelict_house: :desert: :desert_island: :desktop_computer: :detective: :diamond_shape_with_a_dot_inside: :diamonds: :disappointed: :disappointed_relieved: :dizzy: :dizzy_face: :djibouti: :do_not_litter: :dog: :dog2: :dollar: :dolls: :dolphin: :dominica: :dominican_republic: :door: :doughnut: :dove: :dragon: :dragon_face: :dress: :dromedary_camel: :drooling_face: :droplet: :drum: :duck: :dvd: :e-mail: :eagle: :ear: :ear_of_rice: :earth_africa: :earth_americas: :earth_asia: :ecuador: :egg: :eggplant: :egypt: :eight: :eight_pointed_black_star: :eight_spoked_asterisk: :el_salvador: :electric_plug: :electron: :elephant: :email: :end: :envelope: :envelope_with_arrow: :equatorial_guinea: :eritrea: :es: :estonia: :ethiopia: :eu: :euro: :european_castle: :european_post_office: :european_union: :evergreen_tree: :exclamation: :expressionless: :eye: :eye_speech_bubble: :eyeglasses: :eyes: :face_with_head_bandage: :face_with_thermometer: :facepunch: :factory: :falkland_islands: :fallen_leaf: :family: :family_man_boy: :family_man_boy_boy: :family_man_girl: :family_man_girl_boy: :family_man_girl_girl: :family_man_man_boy: :family_man_man_boy_boy: :family_man_man_girl: :family_man_man_girl_boy: :family_man_man_girl_girl: :family_man_woman_boy: :family_man_woman_boy_boy: :family_man_woman_girl: :family_man_woman_girl_boy: :family_man_woman_girl_girl: :family_woman_boy: :family_woman_boy_boy: :family_woman_girl: :family_woman_girl_boy: :family_woman_girl_girl: :family_woman_woman_boy: :family_woman_woman_boy_boy: :family_woman_woman_girl: :family_woman_woman_girl_boy: :family_woman_woman_girl_girl: :faroe_islands: :fast_forward: :fax: :fearful: :feelsgood: :feet: :female_detective: :ferris_wheel: :ferry: :field_hockey: :fiji: :file_cabinet: :file_folder: :film_projector: :film_strip: :finland: :finnadie: :fire: :fire_engine: :fireworks: :first_quarter_moon: :first_quarter_moon_with_face: :fish: :fish_cake: :fishing_pole_and_fish: :fist: :fist_left: :fist_oncoming: :fist_raised: :fist_right: :five: :flags: :flashlight: :fleur_de_lis: :flight_arrival: :flight_departure: :flipper: :floppy_disk: :flower_playing_cards: :flushed: :fog: :foggy: :football: :footprints: :fork_and_knife: :fountain: :fountain_pen: :four: :four_leaf_clover: :fox_face: :fr: :framed_picture: :free: :french_guiana: :french_polynesia: :french_southern_territories: :fried_egg: :fried_shrimp: :fries: :frog: :frowning: :frowning_face: :frowning_man: :frowning_woman: :fu: :fuelpump: :full_moon: :full_moon_with_face: :funeral_urn: :gabon: :gambia: :game_die: :gb: :gear: :gem: :gemini: :georgia: :ghana: :ghost: :gibraltar: :gift: :gift_heart: :girl: :globe_with_meridians: :goal_net: :goat: :goberserk: :godmode: :golf: :golfing_man: :golfing_woman: :gorilla: :grapes: :greece: :green_apple: :green_book: :green_heart: :green_salad: :greenland: :grenada: :grey_exclamation: :grey_question: :grimacing: :grin: :grinning: :guadeloupe: :guam: :guardsman: :guardswoman: :guatemala: :guernsey: :guinea: :guinea_bissau: :guitar: :gun: :guyana: :haircut: :haircut_man: :haircut_woman: :haiti: :hamburger: :hammer: :hammer_and_pick: :hammer_and_wrench: :hamster: :hand: :handbag: :handshake: :hankey: :hash: :hatched_chick: :hatching_chick: :headphones: :hear_no_evil: :heart: :heart_decoration: :heart_eyes: :heart_eyes_cat: :heartbeat: :heartpulse: :hearts: :heavy_check_mark: :heavy_division_sign: :heavy_dollar_sign: :heavy_exclamation_mark: :heavy_heart_exclamation: :heavy_minus_sign: :heavy_multiplication_x: :heavy_plus_sign: :helicopter: :herb: :hibiscus: :high_brightness: :high_heel: :hocho: :hole: :honduras: :honey_pot: :honeybee: :hong_kong: :horse: :horse_racing: :hospital: :hot_pepper: :hotdog: :hotel: :hotsprings: :hourglass: :hourglass_flowing_sand: :house: :house_with_garden: :houses: :hugs: :hungary: :hurtrealbad: :hushed: :ice_cream: :ice_hockey: :ice_skate: :icecream: :iceland: :id: :ideograph_advantage: :imp: :inbox_tray: :incoming_envelope: :india: :indonesia: :information_desk_person: :information_source: :innocent: :interrobang: :iphone: :iran: :iraq: :ireland: :isle_of_man: :israel: :it: :izakaya_lantern: :jack_o_lantern: :jamaica: :japan: :japanese_castle: :japanese_goblin: :japanese_ogre: :jeans: :jersey: :jordan: :joy: :joy_cat: :joystick: :jp: :kaaba: :kazakhstan: :kenya: :key: :keyboard: :keycap_ten: :kick_scooter: :kimono: :kiribati: :kiss: :kissing: :kissing_cat: :kissing_closed_eyes: :kissing_heart: :kissing_smiling_eyes: :kiwi_fruit: :knife: :koala: :koko: :kosovo: :kr: :kuwait: :kyrgyzstan: :label: :lantern: :laos: :large_blue_circle: :large_blue_diamond: :large_orange_diamond: :last_quarter_moon: :last_quarter_moon_with_face: :latin_cross: :latvia: :laughing: :leaves: :lebanon: :ledger: :left_luggage: :left_right_arrow: :leftwards_arrow_with_hook: :lemon: :leo: :leopard: :lesotho: :level_slider: :liberia: :libra: :libya: :liechtenstein: :light_rail: :link: :lion: :lips: :lipstick: :lithuania: :lizard: :lock: :lock_with_ink_pen: :lollipop: :loop: :loud_sound: :loudspeaker: :love_hotel: :love_letter: :low_brightness: :luxembourg: :lying_face: :m: :macau: :macedonia: :madagascar: :mag: :mag_right: :mahjong: :mailbox: :mailbox_closed: :mailbox_with_mail: :mailbox_with_no_mail: :malawi: :malaysia: :maldives: :male_detective: :mali: :malta: :man: :man_artist: :man_astronaut: :man_cartwheeling: :man_cook: :man_dancing: :man_facepalming: :man_factory_worker: :man_farmer: :man_firefighter: :man_health_worker: :man_in_tuxedo: :man_judge: :man_juggling: :man_mechanic: :man_office_worker: :man_pilot: :man_playing_handball: :man_playing_water_polo: :man_scientist: :man_shrugging: :man_singer: :man_student: :man_teacher: :man_technologist: :man_with_gua_pi_mao: :man_with_turban: :mandarin: :mans_shoe: :mantelpiece_clock: :maple_leaf: :marshall_islands: :martial_arts_uniform: :martinique: :mask: :massage: :massage_man: :massage_woman: :mauritania: :mauritius: :mayotte: :meat_on_bone: :medal_military: :medal_sports: :mega: :melon: :memo: :men_wrestling: :menorah: :mens: :metal: :metro: :mexico: :micronesia: :microphone: :microscope: :middle_finger: :milk_glass: :milky_way: :minibus: :minidisc: :mobile_phone_off: :moldova: :monaco: :money_mouth_face: :money_with_wings: :moneybag: :mongolia: :monkey: :monkey_face: :monorail: :montenegro: :montserrat: :moon: :morocco: :mortar_board: :mosque: :motor_boat: :motor_scooter: :motorcycle: :motorway: :mount_fuji: :mountain: :mountain_bicyclist: :mountain_biking_man: :mountain_biking_woman: :mountain_cableway: :mountain_railway: :mountain_snow: :mouse: :mouse2: :movie_camera: :moyai: :mozambique: :mrs_claus: :muscle: :mushroom: :musical_keyboard: :musical_note: :musical_score: :mute: :myanmar: :nail_care: :name_badge: :namibia: :national_park: :nauru: :nauseated_face: :neckbeard: :necktie: :negative_squared_cross_mark: :nepal: :nerd_face: :netherlands: :neutral_face: :new: :new_caledonia: :new_moon: :new_moon_with_face: :new_zealand: :newspaper: :newspaper_roll: :next_track_button: :ng: :ng_man: :ng_woman: :nicaragua: :niger: :nigeria: :night_with_stars: :nine: :niue: :no_bell: :no_bicycles: :no_entry: :no_entry_sign: :no_good: :no_good_man: :no_good_woman: :no_mobile_phones: :no_mouth: :no_pedestrians: :no_smoking: :non-potable_water: :norfolk_island: :north_korea: :northern_mariana_islands: :norway: :nose: :notebook: :notebook_with_decorative_cover: :notes: :nut_and_bolt: :o: :o2: :ocean: :octocat: :octopus: :oden: :office: :oil_drum: :ok: :ok_hand: :ok_man: :ok_woman: :old_key: :older_man: :older_woman: :om: :oman: :on: :oncoming_automobile: :oncoming_bus: :oncoming_police_car: :oncoming_taxi: :one: :open_book: :open_file_folder: :open_hands: :open_mouth: :open_umbrella: :ophiuchus: :orange: :orange_book: :orthodox_cross: :outbox_tray: :owl: :ox: :package: :page_facing_up: :page_with_curl: :pager: :paintbrush: :pakistan: :palau: :palestinian_territories: :palm_tree: :panama: :pancakes: :panda_face: :paperclip: :paperclips: :papua_new_guinea: :paraguay: :parasol_on_ground: :parking: :part_alternation_mark: :partly_sunny: :passenger_ship: :passport_control: :pause_button: :paw_prints: :peace_symbol: :peach: :peanuts: :pear: :pen: :pencil: :pencil2: :penguin: :pensive: :performing_arts: :persevere: :person_fencing: :person_frowning: :person_with_blond_hair: :person_with_pouting_face: :peru: :philippines: :phone: :pick: :pig: :pig2: :pig_nose: :pill: :pineapple: :ping_pong: :pisces: :pitcairn_islands: :pizza: :place_of_worship: :plate_with_cutlery: :play_or_pause_button: :point_down: :point_left: :point_right: :point_up: :point_up_2: :poland: :police_car: :policeman: :policewoman: :poodle: :poop: :popcorn: :portugal: :post_office: :postal_horn: :postbox: :potable_water: :potato: :pouch: :poultry_leg: :pound: :pout: :pouting_cat: :pouting_man: :pouting_woman: :pray: :prayer_beads: :pregnant_woman: :previous_track_button: :prince: :princess: :printer: :puerto_rico: :punch: :purple_heart: :purse: :pushpin: :put_litter_in_its_place: :qatar: :question: :rabbit: :rabbit2: :racehorse: :racing_car: :radio: :radio_button: :radioactive: :rage: :rage1: :rage2: :rage3: :rage4: :railway_car: :railway_track: :rainbow: :rainbow_flag: :raised_back_of_hand: :raised_hand: :raised_hand_with_fingers_splayed: :raised_hands: :raising_hand: :raising_hand_man: :raising_hand_woman: :ram: :ramen: :rat: :record_button: :recycle: :red_car: :red_circle: :registered: :relaxed: :relieved: :reminder_ribbon: :repeat: :repeat_one: :rescue_worker_helmet: :restroom: :reunion: :revolving_hearts: :rewind: :rhinoceros: :ribbon: :rice: :rice_ball: :rice_cracker: :rice_scene: :right_anger_bubble: :ring: :robot: :rocket: :rofl: :roll_eyes: :roller_coaster: :romania: :rooster: :rose: :rosette: :rotating_light: :round_pushpin: :rowboat: :rowing_man: :rowing_woman: :ru: :rugby_football: :runner: :running: :running_man: :running_shirt_with_sash: :running_woman: :rwanda: :sa: :sagittarius: :sailboat: :sake: :samoa: :san_marino: :sandal: :santa: :sao_tome_principe: :sassy_man: :sassy_woman: :satellite: :satisfied: :saudi_arabia: :saxophone: :school: :school_satchel: :scissors: :scorpion: :scorpius: :scream: :scream_cat: :scroll: :seat: :secret: :see_no_evil: :seedling: :selfie: :senegal: :serbia: :seven: :seychelles: :shallow_pan_of_food: :shamrock: :shark: :shaved_ice: :sheep: :shell: :shield: :shinto_shrine: :ship: :shipit: :shirt: :shit: :shoe: :shopping: :shopping_cart: :shower: :shrimp: :sierra_leone: :signal_strength: :singapore: :sint_maarten: :six: :six_pointed_star: :ski: :skier: :skull: :skull_and_crossbones: :sleeping: :sleeping_bed: :sleepy: :slightly_frowning_face: :slightly_smiling_face: :slot_machine: :slovakia: :slovenia: :small_airplane: :small_blue_diamond: :small_orange_diamond: :small_red_triangle: :small_red_triangle_down: :smile: :smile_cat: :smiley: :smiley_cat: :smiling_imp: :smirk: :smirk_cat: :smoking: :snail: :snake: :sneezing_face: :snowboarder: :snowflake: :snowman: :snowman_with_snow: :sob: :soccer: :solomon_islands: :somalia: :soon: :sos: :sound: :south_africa: :south_georgia_south_sandwich_islands: :south_sudan: :space_invader: :spades: :spaghetti: :sparkle: :sparkler: :sparkles: :sparkling_heart: :speak_no_evil: :speaker: :speaking_head: :speech_balloon: :speedboat: :spider: :spider_web: :spiral_calendar: :spiral_notepad: :spoon: :squid: :squirrel: :sri_lanka: :st_barthelemy: :st_helena: :st_kitts_nevis: :st_lucia: :st_pierre_miquelon: :st_vincent_grenadines: :stadium: :star: :star2: :star_and_crescent: :star_of_david: :stars: :station: :statue_of_liberty: :steam_locomotive: :stew: :stop_button: :stop_sign: :stopwatch: :straight_ruler: :strawberry: :stuck_out_tongue: :stuck_out_tongue_closed_eyes: :stuck_out_tongue_winking_eye: :studio_microphone: :stuffed_flatbread: :sudan: :sun_behind_large_cloud: :sun_behind_rain_cloud: :sun_behind_small_cloud: :sun_with_face: :sunflower: :sunglasses: :sunny: :sunrise: :sunrise_over_mountains: :surfer: :surfing_man: :surfing_woman: :suriname: :sushi: :suspect: :suspension_railway: :swaziland: :sweat: :sweat_drops: :sweat_smile: :sweden: :sweet_potato: :swimmer: :swimming_man: :swimming_woman: :switzerland: :symbols: :synagogue: :syria: :syringe: :taco: :tada: :taiwan: :tajikistan: :tanabata_tree: :tangerine: :tanzania: :taurus: :taxi: :tea: :telephone: :telephone_receiver: :telescope: :tennis: :tent: :thailand: :thermometer: :thinking: :thought_balloon: :three: :thumbsdown: :thumbsup: :ticket: :tickets: :tiger: :tiger2: :timer_clock: :timor_leste: :tipping_hand_man: :tipping_hand_woman: :tired_face: :tm: :togo: :toilet: :tokelau: :tokyo_tower: :tomato: :tonga: :tongue: :top: :tophat: :tornado: :tr: :trackball: :tractor: :traffic_light: :train: :train2: :tram: :triangular_flag_on_post: :triangular_ruler: :trident: :trinidad_tobago: :triumph: :trolleybus: :trollface: :trophy: :tropical_drink: :tropical_fish: :truck: :trumpet: :tshirt: :tulip: :tumbler_glass: :tunisia: :turkey: :turkmenistan: :turks_caicos_islands: :turtle: :tuvalu: :tv: :twisted_rightwards_arrows: :two: :two_hearts: :two_men_holding_hands: :two_women_holding_hands: :u5272: :u5408: :u55b6: :u6307: :u6708: :u6709: :u6e80: :u7121: :u7533: :u7981: :u7a7a: :uganda: :uk: :ukraine: :umbrella: :unamused: :underage: :unicorn: :united_arab_emirates: :unlock: :up: :upside_down_face: :uruguay: :us: :us_virgin_islands: :uzbekistan: :v: :vanuatu: :vatican_city: :venezuela: :vertical_traffic_light: :vhs: :vibration_mode: :video_camera: :video_game: :vietnam: :violin: :virgo: :volcano: :volleyball: :vs: :vulcan_salute: :walking: :walking_man: :walking_woman: :wallis_futuna: :waning_crescent_moon: :waning_gibbous_moon: :warning: :wastebasket: :watch: :water_buffalo: :watermelon: :wave: :wavy_dash: :waxing_crescent_moon: :waxing_gibbous_moon: :wc: :weary: :wedding: :weight_lifting_man: :weight_lifting_woman: :western_sahara: :whale: :whale2: :wheel_of_dharma: :wheelchair: :white_check_mark: :white_circle: :white_flag: :white_flower: :white_large_square: :white_medium_small_square: :white_medium_square: :white_small_square: :white_square_button: :wilted_flower: :wind_chime: :wind_face: :wine_glass: :wink: :wolf: :woman: :woman_artist: :woman_astronaut: :woman_cartwheeling: :woman_cook: :woman_facepalming: :woman_factory_worker: :woman_farmer: :woman_firefighter: :woman_health_worker: :woman_judge: :woman_juggling: :woman_mechanic: :woman_office_worker: :woman_pilot: :woman_playing_handball: :woman_playing_water_polo: :woman_scientist: :woman_shrugging: :woman_singer: :woman_student: :woman_teacher: :woman_technologist: :woman_with_turban: :womans_clothes: :womans_hat: :women_wrestling: :womens: :world_map: :worried: :wrench: :writing_hand: :x: :yellow_heart: :yemen: :yen: :yin_yang: :yum: :zambia: :zap: :zero: :zimbabwe: :zipper_mouth_face: :zzz:</span><br></pre></td></tr></tbody></table></figure><script>
+        document.querySelectorAll('.github-emojis')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://toyourheart163.github.io/2019/11/20/Django%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="toyourheart163">
+      <meta itemprop="description" content="提升思维能力 普及常识 谈点技术">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="麦可乐的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/11/20/Django%E6%95%B0%E6%8D%AE%E5%88%86%E6%9E%90/" class="post-title-link" itemprop="url">Django 数据分析</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-11-21 02:04:09" itemprop="dateCreated datePublished" datetime="2019-11-21T02:04:09+08:00">2019-11-21</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-12 18:36:26" itemprop="dateModified" datetime="2021-03-12T18:36:26+08:00">2021-03-12</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/python/" itemprop="url" rel="index"><span itemprop="name">python</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h1 id="django-统计功能"><a href="#django-统计功能" class="headerlink" title="django 统计功能"></a>django 统计功能</h1><p><span class="github-emojis" style="color: transparent;background:no-repeat url(https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8) center/contain" data-src="https://github.githubassets.com/images/icons/emoji/unicode/1f604.png?v8">😄</span></p>
+<h2 id="views-py"><a href="#views-py" class="headerlink" title="views.py"></a>views.py</h2><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># views.py</span></span><br><span class="line"></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="string">年统计，月统计，分类统计, 假数据</span></span><br><span class="line"><span class="string">faker data aggregate or annotate.</span></span><br><span class="line"><span class="string">annotate 得到 queryset （数据集合）</span></span><br><span class="line"><span class="string">aggregate 得到统计结果</span></span><br><span class="line"><span class="string">"""</span></span><br><span class="line"><span class="keyword">import</span> random</span><br><span class="line"><span class="keyword">from</span> datetime <span class="keyword">import</span> datetime</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> faker <span class="keyword">import</span> Faker</span><br><span class="line"><span class="keyword">from</span> django.db.models <span class="keyword">import</span> Count, Avg, Sum, Max, Min</span><br><span class="line"><span class="keyword">from</span> django.http <span class="keyword">import</span> JsonResponse</span><br><span class="line"></span><br><span class="line"><span class="keyword">from</span> api.models <span class="keyword">import</span> Trade</span><br><span class="line"></span><br><span class="line"><span class="comment"># 生成假数据</span></span><br><span class="line">names = [<span class="string">'iPhone'</span>, <span class="string">'iPad'</span>, <span class="string">'Mac'</span>, <span class="string">'iPod'</span>, <span class="string">'app'</span>]</span><br><span class="line">faker = Faker()</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">faker_price</span>():</span></span><br><span class="line">    <span class="keyword">return</span> <span class="built_in">round</span>(random.random()*<span class="number">1000</span> * random.random() * random.random(), <span class="number">2</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">9999</span>):</span><br><span class="line">    created_at=faker.date_time_ad(start_datetime=datetime(<span class="number">2017</span>, <span class="number">1</span>, <span class="number">1</span>))</span><br><span class="line">    Trade.objects.create(name=random.choice(names), price=faker_price(), created_at=created_at)</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">trade_list</span>(<span class="params">request</span>):</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    年统计，月统计，分类统计</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    <span class="comment"># 年统计</span></span><br><span class="line">    trades1 = Trade.objects.extra(select={<span class="string">'created_at'</span>: <span class="string">"strftime('%Y', created_at)"</span>}).values(<span class="string">'created_at'</span>, <span class="string">'name'</span>).annotate(count=Count(<span class="string">'id'</span>))</span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    统计结果</span></span><br><span class="line"><span class="string">    Out[12]: &lt;QuerySet [{'created_at': '2017', 'name': 'Mac', 'count': 699}, {'created_at': '2018', 'name': 'Mac', 'count': 640}...</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line"></span><br><span class="line">    <span class="comment"># 月统计</span></span><br><span class="line">    trades2 = Trade.objects.extra(select={<span class="string">'created_at'</span>: <span class="string">"strftime('%Y-%m', created_at)"</span>}).values(<span class="string">'created_at'</span>).annotate(count=Count(<span class="string">'id'</span>))</span><br><span class="line"></span><br><span class="line">    <span class="comment"># 分类（field: name）统计之和</span></span><br><span class="line">    trades3 = Trade.objects.values(<span class="string">'name'</span>).aggregate(Sum(<span class="string">'price'</span>))</span><br><span class="line">    <span class="keyword">return</span> JsonResponse({</span><br><span class="line">        <span class="string">'code'</span>: <span class="number">200</span></span><br><span class="line">        <span class="string">'data'</span>: {</span><br><span class="line">            <span class="string">'res_year'</span>: <span class="built_in">list</span>(trades1),</span><br><span class="line">            <span class="string">'res_month'</span>: <span class="built_in">list</span>(trades2),</span><br><span class="line">            <span class="string">'res_price_sum'</span>: trades3,</span><br><span class="line">        }</span><br><span class="line">    })</span><br></pre></td></tr></tbody></table></figure>
+
+<h2 id="models-py"><a href="#models-py" class="headerlink" title="models.py"></a>models.py</h2><figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># models.py</span></span><br><span class="line"><span class="keyword">from</span> django.db <span class="keyword">import</span> models</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Trade</span>(<span class="params">models.Model</span>):</span></span><br><span class="line">    <span class="string">"""</span></span><br><span class="line"><span class="string">    订单的模型</span></span><br><span class="line"><span class="string">    """</span></span><br><span class="line">    name = models.CharField(max_length=<span class="number">70</span>, default=<span class="string">'iPad'</span>)</span><br><span class="line">    price = models.DecimalField(max_digits=<span class="number">8</span>, decimal_places=<span class="number">2</span>)</span><br><span class="line">    created_at = models.DateTimeField()</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__str__</span>(<span class="params">self</span>):</span></span><br><span class="line">        <span class="keyword">return</span> self.name</span><br></pre></td></tr></tbody></table></figure><script>
+        document.querySelectorAll('.github-emojis')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://toyourheart163.github.io/2019/11/03/markdown-tutorial/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="toyourheart163">
+      <meta itemprop="description" content="提升思维能力 普及常识 谈点技术">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="麦可乐的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2019/11/03/markdown-tutorial/" class="post-title-link" itemprop="url">markdown 教程</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2019-11-03 21:32:42" itemprop="dateCreated datePublished" datetime="2019-11-03T21:32:42+08:00">2019-11-03</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-12 18:36:26" itemprop="dateModified" datetime="2021-03-12T18:36:26+08:00">2021-03-12</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/tools/" itemprop="url" rel="index"><span itemprop="name">tools</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <h2 id="org-mode-最好的文档编辑利器，没有之一"><a href="#org-mode-最好的文档编辑利器，没有之一" class="headerlink" title="org-mode: 最好的文档编辑利器，没有之一"></a>org-mode: 最好的文档编辑利器，没有之一</h2><h3 id="用emacs编辑器生成Markdown"><a href="#用emacs编辑器生成Markdown" class="headerlink" title="用emacs编辑器生成Markdown"></a>用emacs编辑器生成Markdown</h3><p>  <a target="_blank" rel="noopener" href="https://www.cnblogs.com/holbrook/archive/2012/04/12/2444992.html">org-mode: 最好的文档编辑利器，没有之一</a></p>
+<blockquote>
+<p>尽管按照org-mode 官方 的说法，Org 是一个基于快速高效的文本方式来实现做笔记、管理待办事项（TODO list）以及做项目计划的模式（Org is a mode for keeping notes, maintaining TODO lists, and doing project planning with a fast and effective plain-text system ），但 Org-mode 首先是最好的文档编辑利器，没有之一。</p>
+</blockquote>
+<h2 id="Markdown-教程"><a href="#Markdown-教程" class="headerlink" title="Markdown 教程"></a>Markdown 教程</h2><blockquote>
+<p><a target="_blank" rel="noopener" href="https://nirongxu.github.io/vue-xuAdmin/dist/#/markdown">vue-xuAdmin</a> Copyright © 2018 xuAdmin.</p>
+</blockquote>
+<p><strong>发现Hexo里面弄不了流程图、数学公式、序列图。</strong></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/u014061630/article/details/81359144">Markdown语法图文全面详解(10分钟学会)</a></p>
+<p><del>下划线</del> <code>~~下划线~~</code></p>
+<h3 id="python"><a href="#python" class="headerlink" title="python"></a>python</h3><p>```python<br>import this<br>```</p>
+<figure class="highlight python"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> this</span><br></pre></td></tr></tbody></table></figure>
+
+<pre><code>The Zen of Python, by Tim Peters
+
+Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!</code></pre><script>
+        document.querySelectorAll('.github-emojis')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/page/2/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><a class="extend next" rel="next" href="/page/4/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">toyourheart163</p>
+  <div class="site-description" itemprop="description">提升思维能力 普及常识 谈点技术</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">34</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">59</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/toyourheart163" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;toyourheart163" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      Links
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://github.com/toyourheart163" title="https:&#x2F;&#x2F;github.com&#x2F;toyourheart163" rel="noopener" target="_blank">repos</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2019 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">toyourheart163</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="总访客量">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="总访问量">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+<script src="/js/bookmark.js"></script>
+
+
+
+
+  
+  <script>
+    (function(){
+      var canonicalURL, curProtocol;
+      //Get the <link> tag
+      var x=document.getElementsByTagName("link");
+		//Find the last canonical URL
+		if(x.length > 0){
+			for (i=0;i<x.length;i++){
+				if(x[i].rel.toLowerCase() == 'canonical' && x[i].href){
+					canonicalURL=x[i].href;
+				}
+			}
+		}
+    //Get protocol
+	    if (!canonicalURL){
+	    	curProtocol = window.location.protocol.split(':')[0];
+	    }
+	    else{
+	    	curProtocol = canonicalURL.split(':')[0];
+	    }
+      //Get current URL if the canonical URL does not exist
+	    if (!canonicalURL) canonicalURL = window.location.href;
+	    //Assign script content. Replace current URL with the canonical URL
+      !function(){var e=/([http|https]:\/\/[a-zA-Z0-9\_\.]+\.baidu\.com)/gi,r=canonicalURL,t=document.referrer;if(!e.test(r)){var n=(String(curProtocol).toLowerCase() === 'https')?"https://sp0.baidu.com/9_Q4simg2RQJ8t7jm9iCKT-xh_/s.gif":"//api.share.baidu.com/s.gif";t?(n+="?r="+encodeURIComponent(document.referrer),r&&(n+="&l="+r)):r&&(n+="?l="+r);var i=new Image;i.src=n}}(window);})();
+  </script>
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+
+</body>
+</html>
